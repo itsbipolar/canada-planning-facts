@@ -79,3 +79,183 @@ facts:
     as_of: 2026-11-09
     status: unverified
     notes: "Act current to 2026-10-19. The deferral period's maximum is set elsewhere in the Act (not drafted here)."
+  - id: rrsp_dollar_limit.2025
+    series: rrsp_dollar_limit
+    title: RRSP dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2025
+    unit: CAD
+    value: "32490"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2025 | $33,810 | $3,756.67 | $32,490 | $16,905 | $71,300 | $81,200"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
+  - id: rrsp_dollar_limit.2026
+    series: rrsp_dollar_limit
+    title: RRSP dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: CAD
+    value: "33810"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2026 | $35,390 | $3,932.22 | $33,810 | $17,695 | $74,600 | $85,000"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
+  - id: rrsp_dollar_limit.2027
+    series: rrsp_dollar_limit
+    title: RRSP dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: CAD
+    value: "35390"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2027 | $36,390 | $4,043.33 | $35,390 | $18,195 | $76,700 | $87,400"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
+  - id: rrsp_dollar_limit.2028
+    series: rrsp_dollar_limit
+    title: RRSP dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2028
+    unit: CAD
+    value: "36390"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2028 | - | 1/9 the money purchase limit | $36,390 | - | - | -"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
+  - id: ympe.2025
+    series: ympe
+    title: Year's maximum pensionable earnings (YMPE)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2025
+    unit: CAD
+    value: "71300"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2025 | $33,810 | $3,756.67 | $32,490 | $16,905 | $71,300 | $81,200"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'YMPE'. Page modified 2026-10-28."
+  - id: ympe.2026
+    series: ympe
+    title: Year's maximum pensionable earnings (YMPE)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: CAD
+    value: "74600"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2026 | $35,390 | $3,932.22 | $33,810 | $17,695 | $74,600 | $85,000"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'YMPE'. Page modified 2026-10-28."
+  - id: ympe.2027
+    series: ympe
+    title: Year's maximum pensionable earnings (YMPE)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: CAD
+    value: "76700"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2027 | $36,390 | $4,043.33 | $35,390 | $18,195 | $76,700 | $87,400"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'YMPE'. Page modified 2026-10-28."
+  - id: yampe.2025
+    series: yampe
+    title: Year's additional maximum pensionable earnings (YAMPE)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2025
+    unit: CAD
+    value: "81200"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2025 | $33,810 | $3,756.67 | $32,490 | $16,905 | $71,300 | $81,200"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'YAMPE'. Page modified 2026-10-28."
+  - id: yampe.2026
+    series: yampe
+    title: Year's additional maximum pensionable earnings (YAMPE)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: CAD
+    value: "85000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2026 | $35,390 | $3,932.22 | $33,810 | $17,695 | $74,600 | $85,000"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'YAMPE'. Page modified 2026-10-28."
+  - id: yampe.2027
+    series: yampe
+    title: Year's additional maximum pensionable earnings (YAMPE)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: CAD
+    value: "87400"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2027 | $36,390 | $4,043.33 | $35,390 | $18,195 | $76,700 | $87,400"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'YAMPE'. Page modified 2026-10-28."
+  - id: tfsa_annual_limit.2025
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2025
+    unit: CAD
+    value: "7000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2025 | $7,000 | $180,000"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
+  - id: tfsa_annual_limit.2026
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: CAD
+    value: "7000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2026 | $7,000 | $180,000"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
+  - id: tfsa_annual_limit.2027
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: CAD
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    authority: official_publication
+    as_of: 2026-11-09
+    status: pending
+    notes: "Not on the CRA page as of 2026-11-09 (page modified 2026-10-28)."
