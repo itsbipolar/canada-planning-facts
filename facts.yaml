@@ -282,7 +282,7 @@ facts:
     series: ontario_brackets
     title: Ontario income tax brackets
     kind: yearly
-    jurisdiction: ON
+    jurisdiction: "ON"  # quoted: bare ON is read as true by YAML
     tax_year: 2026
     unit: percent
     value:
