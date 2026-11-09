@@ -1,0 +1,4 @@
+# Canada Planning Facts. One entry per figure; schema in src/canada_planning_facts/schema.py; rules in SPEC.md §4.
+# Drafts are copied from the official page with the exact quoted line and stay `unverified` until Mo confirms them.
+# Education only, not personal financial, tax, legal or investment advice. Verify at the source.
+facts: []
