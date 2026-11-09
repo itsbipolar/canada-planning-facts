@@ -297,3 +297,211 @@ facts:
     as_of: 2026-11-09
     status: unverified
     notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25), linked as '2026' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
+  - id: federal_brackets.2025
+    series: federal_brackets
+    title: Federal income tax brackets
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2025
+    unit: percent
+    value:
+      - {from: "0", to: "57375", rate: "14.5"}
+      - {from: "57375.01", to: "114750", rate: "20.5"}
+      - {from: "114750.01", to: "177882", rate: "26"}
+      - {from: "177882.01", to: "253414", rate: "29"}
+      - {from: "253414.01", rate: "33"}
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_quote: "$0 | $57,375 | 14.5%"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25), linked as '2025' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited. The page's footnote 1: 'The federal tax rate decreased from 15% to 14% on July 1, 2025, making the tax rate 14.5% for 2025.'"
+  - id: ontario_brackets.2025
+    series: ontario_brackets
+    title: Ontario income tax brackets
+    kind: yearly
+    jurisdiction: "ON"
+    tax_year: 2025
+    unit: percent
+    value:
+      - {from: "0", to: "52886", rate: "5.05"}
+      - {from: "52886.01", to: "105775", rate: "9.15"}
+      - {from: "105775.01", to: "150000", rate: "11.16"}
+      - {from: "150000.01", to: "220000", rate: "12.16"}
+      - {from: "220000.01", rate: "13.16"}
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_quote: "$0 | $52,886 | 5.05%"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25), linked as '2025' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
+  - id: federal_brackets.2027
+    series: federal_brackets
+    title: Federal income tax brackets
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: percent
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    authority: official_publication
+    as_of: 2026-11-09
+    status: pending
+    notes: "2027 brackets not published as of 2026-11-09."
+  - id: ontario_brackets.2027
+    series: ontario_brackets
+    title: Ontario income tax brackets
+    kind: yearly
+    jurisdiction: "ON"
+    tax_year: 2027
+    unit: percent
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    authority: official_publication
+    as_of: 2026-11-09
+    status: pending
+    notes: "2027 brackets not published as of 2026-11-09."
+  - id: oas_recovery_threshold.2024
+    series: oas_recovery_threshold
+    title: OAS pension recovery tax threshold (minimum income recovery threshold)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2024
+    unit: CAD
+    value: "90997"
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html
+    source_quote: "July 2025 to June 2026 | 2024 | $90,997 | $148,451 | $154,196"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
+  - id: oas_recovery_threshold.2025
+    series: oas_recovery_threshold
+    title: OAS pension recovery tax threshold (minimum income recovery threshold)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2025
+    unit: CAD
+    value: "93454"
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html
+    source_quote: "July 2026 to June 2027 | 2025 | $93,454 | $152,062 | $157,923"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
+  - id: oas_recovery_threshold.2026
+    series: oas_recovery_threshold
+    title: OAS pension recovery tax threshold (minimum income recovery threshold)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: CAD
+    value: "95323"
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html
+    source_quote: "July 2027 to June 2028 | 2026 | $95,323 | $155,320 | $161,320"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
+  - id: oas_recovery_threshold.2027
+    series: oas_recovery_threshold
+    title: OAS pension recovery tax threshold (minimum income recovery threshold)
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: CAD
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html
+    authority: official_publication
+    as_of: 2026-11-09
+    status: pending
+    notes: "Income year 2027 not on the page as of 2026-11-09."
+  - id: cpp_early_start_reduction
+    series: cpp_early_start_reduction
+    title: CPP retirement pension reduction for each month started before 65
+    kind: fixed
+    jurisdiction: federal
+    unit: percent_per_month
+    value: "0.6"
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/cpp/when-start.html
+    source_quote: "Payments decrease by 0.6% each month (7.2% per year), up to a maximum reduction of 36% if you start at age 60."
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
+  - id: cpp_late_start_increase
+    series: cpp_late_start_increase
+    title: CPP retirement pension increase for each month started after 65
+    kind: fixed
+    jurisdiction: federal
+    unit: percent_per_month
+    value: "0.7"
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/cpp/when-start.html
+    source_quote: "Payments increase by 0.7% each month (8.4% per year), up to 42% at age 70."
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
+  - id: rrsp_contribution_deadline.2025
+    series: rrsp_contribution_deadline
+    title: RRSP contribution deadline for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2025
+    unit: date
+    value: "2026-03-02"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    source_quote: "March 2, 2026: Deadline to contribute to an RRSP, a PRPP, or an SPP"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Page 'Due dates and payment dates' (Date modified: 2026-09-17), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. tax_year is the year the contribution is deducted for."
+  - id: rrsp_contribution_deadline.2026
+    series: rrsp_contribution_deadline
+    title: RRSP contribution deadline for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: date
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    authority: official_publication
+    as_of: 2026-11-09
+    status: pending
+    notes: "Deadline for 2026 contributions not on the page as of 2026-11-09."
+  - id: rrsp_contribution_deadline.2027
+    series: rrsp_contribution_deadline
+    title: RRSP contribution deadline for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: date
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    authority: official_publication
+    as_of: 2026-11-09
+    status: pending
+    notes: "Deadline for 2027 contributions not on the page as of 2026-11-09."
+  - id: tfsa_annual_limit.2023
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2023
+    unit: CAD
+    value: "6500"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2023 | $6,500 | $160,000"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
+  - id: tfsa_annual_limit.2024
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2024
+    unit: CAD
+    value: "7000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html
+    source_quote: "2024 | $7,000 | $170,000"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
