@@ -259,3 +259,41 @@ facts:
     as_of: 2026-11-09
     status: pending
     notes: "Not on the CRA page as of 2026-11-09 (page modified 2026-10-28)."
+  - id: federal_brackets.2026
+    series: federal_brackets
+    title: Federal income tax brackets
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: percent
+    value:
+      - {from: "0", to: "58523", rate: "14"}
+      - {from: "58523.01", to: "117045", rate: "20.5"}
+      - {from: "117045.01", to: "181440", rate: "26"}
+      - {from: "181440.01", to: "258482", rate: "29"}
+      - {from: "258482.01", rate: "33"}
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_quote: "$0 | $58,523 | 14%"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25), linked as '2026' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
+  - id: ontario_brackets.2026
+    series: ontario_brackets
+    title: Ontario income tax brackets
+    kind: yearly
+    jurisdiction: ON
+    tax_year: 2026
+    unit: percent
+    value:
+      - {from: "0", to: "53891", rate: "5.05"}
+      - {from: "53891.01", to: "107785", rate: "9.15"}
+      - {from: "107785.01", to: "150000", rate: "11.16"}
+      - {from: "150000.01", to: "220000", rate: "12.16"}
+      - {from: "220000.01", rate: "13.16"}
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_quote: "$0 | $53,891 | 5.05%"
+    authority: official_publication
+    as_of: 2026-11-09
+    status: unverified
+    notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25), linked as '2026' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
