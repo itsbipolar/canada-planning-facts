@@ -1,4 +1,81 @@
 # Canada Planning Facts. One entry per figure; schema in src/canada_planning_facts/schema.py; rules in SPEC.md §4.
 # Drafts are copied from the official page with the exact quoted line and stay `unverified` until Mo confirms them.
 # Education only, not personal financial, tax, legal or investment advice. Verify at the source.
-facts: []
+facts:
+  - id: rrif_minimum_factors
+    series: rrif_minimum_factors
+    title: RRIF minimum withdrawal factors by age (Income Tax Regulations 7308(4))
+    kind: fixed
+    jurisdiction: federal
+    unit: factor
+    value:
+      - {age: 71, factor: "0.0528"}
+      - {age: 72, factor: "0.0540"}
+      - {age: 73, factor: "0.0553"}
+      - {age: 74, factor: "0.0567"}
+      - {age: 75, factor: "0.0582"}
+      - {age: 76, factor: "0.0598"}
+      - {age: 77, factor: "0.0617"}
+      - {age: 78, factor: "0.0636"}
+      - {age: 79, factor: "0.0658"}
+      - {age: 80, factor: "0.0682"}
+      - {age: 81, factor: "0.0708"}
+      - {age: 82, factor: "0.0738"}
+      - {age: 83, factor: "0.0771"}
+      - {age: 84, factor: "0.0808"}
+      - {age: 85, factor: "0.0851"}
+      - {age: 86, factor: "0.0899"}
+      - {age: 87, factor: "0.0955"}
+      - {age: 88, factor: "0.1021"}
+      - {age: 89, factor: "0.1099"}
+      - {age: 90, factor: "0.1192"}
+      - {age: 91, factor: "0.1306"}
+      - {age: 92, factor: "0.1449"}
+      - {age: 93, factor: "0.1634"}
+      - {age: 94, factor: "0.1879"}
+      - {age: 95, factor: "0.2000"}
+    source_url: https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-7308.html
+    source_quote: "is the factor, determined in accordance with the following table, that corresponds to the age in whole years (in the table referred to as “Y”) attained by the individual at the beginning of the year"
+    authority: statute
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Age is at the beginning of the year. Under 71 the table gives the formula 1/(90 – Y). The row for age 95 reads '95 or older'. Subsection 7308(3) has a separate table for qualifying (pre-1993) funds. Regulations current to 2026-10-19."
+  - id: fhsa_annual_base_limit
+    series: fhsa_annual_base_limit
+    title: FHSA annual participation room before carryforward (Income Tax Act 146.6(1), annual FHSA limit)
+    kind: fixed
+    jurisdiction: federal
+    unit: CAD
+    value: "8000"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.6.html
+    source_quote: "$8,000 + D − (E − F)"
+    authority: statute
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Part (b) of the definition 'annual FHSA limit'; D is the FHSA carryforward. Not indexed. Act current to 2026-10-19."
+  - id: fhsa_lifetime_limit
+    series: fhsa_lifetime_limit
+    title: FHSA lifetime contribution limit (Income Tax Act 146.6)
+    kind: fixed
+    jurisdiction: federal
+    unit: CAD
+    value: "40000"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.6.html
+    source_quote: "the amount by which $40,000 exceeds the total of"
+    authority: statute
+    as_of: 2026-11-09
+    status: unverified
+    notes: "From the deduction limit in subsection 146.6(5). Not indexed. Act current to 2026-10-19."
+  - id: oas_deferral_increase
+    series: oas_deferral_increase
+    title: OAS pension increase for each month of voluntary deferral (Old Age Security Act 7.1)
+    kind: fixed
+    jurisdiction: federal
+    unit: percent_per_month
+    value: "0.6"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/O-9/section-7.1.html
+    source_quote: "is increased by 0.6% for each month in the period that begins in the month after the month in which the person becomes qualified for that pension"
+    authority: statute
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Act current to 2026-10-19. The deferral period's maximum is set elsewhere in the Act (not drafted here)."
