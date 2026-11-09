@@ -38,7 +38,9 @@ facts:
     source_quote: "is the factor, determined in accordance with the following table, that corresponds to the age in whole years (in the table referred to as “Y”) attained by the individual at the beginning of the year"
     authority: statute
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Age is at the beginning of the year. Under 71 the table gives the formula 1/(90 – Y). The row for age 95 reads '95 or older'. Subsection 7308(3) has a separate table for qualifying (pre-1993) funds. Regulations current to 2026-10-19."
   - id: fhsa_annual_base_limit
     series: fhsa_annual_base_limit
@@ -51,7 +53,9 @@ facts:
     source_quote: "$8,000 + D − (E − F)"
     authority: statute
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Part (b) of the definition 'annual FHSA limit'; D is the FHSA carryforward. Not indexed. Act current to 2026-10-19."
   - id: fhsa_lifetime_limit
     series: fhsa_lifetime_limit
@@ -64,7 +68,9 @@ facts:
     source_quote: "the amount by which $40,000 exceeds the total of"
     authority: statute
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "From the deduction limit in subsection 146.6(5). Not indexed. Act current to 2026-10-19."
   - id: oas_deferral_increase
     series: oas_deferral_increase
@@ -77,7 +83,9 @@ facts:
     source_quote: "is increased by 0.6% for each month in the period that begins in the month after the month in which the person becomes qualified for that pension"
     authority: statute
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Act current to 2026-10-19. The deferral period's maximum is set elsewhere in the Act (not drafted here)."
   - id: rrsp_dollar_limit.2025
     series: rrsp_dollar_limit
@@ -91,7 +99,9 @@ facts:
     source_quote: "2025 | $33,810 | $3,756.67 | $32,490 | $16,905 | $71,300 | $81,200"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
   - id: rrsp_dollar_limit.2026
     series: rrsp_dollar_limit
@@ -105,7 +115,9 @@ facts:
     source_quote: "2026 | $35,390 | $3,932.22 | $33,810 | $17,695 | $74,600 | $85,000"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
   - id: rrsp_dollar_limit.2027
     series: rrsp_dollar_limit
@@ -119,7 +131,9 @@ facts:
     source_quote: "2027 | $36,390 | $4,043.33 | $35,390 | $18,195 | $76,700 | $87,400"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
   - id: rrsp_dollar_limit.2028
     series: rrsp_dollar_limit
@@ -133,7 +147,9 @@ facts:
     source_quote: "2028 | - | 1/9 the money purchase limit | $36,390 | - | - | -"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'RRSP dollar limit'. Page modified 2026-10-28."
   - id: ympe.2025
     series: ympe
@@ -147,7 +163,9 @@ facts:
     source_quote: "2025 | $33,810 | $3,756.67 | $32,490 | $16,905 | $71,300 | $81,200"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'YMPE'. Page modified 2026-10-28."
   - id: ympe.2026
     series: ympe
@@ -161,7 +179,9 @@ facts:
     source_quote: "2026 | $35,390 | $3,932.22 | $33,810 | $17,695 | $74,600 | $85,000"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'YMPE'. Page modified 2026-10-28."
   - id: ympe.2027
     series: ympe
@@ -175,7 +195,9 @@ facts:
     source_quote: "2027 | $36,390 | $4,043.33 | $35,390 | $18,195 | $76,700 | $87,400"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'YMPE'. Page modified 2026-10-28."
   - id: yampe.2025
     series: yampe
@@ -189,7 +211,9 @@ facts:
     source_quote: "2025 | $33,810 | $3,756.67 | $32,490 | $16,905 | $71,300 | $81,200"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'YAMPE'. Page modified 2026-10-28."
   - id: yampe.2026
     series: yampe
@@ -203,7 +227,9 @@ facts:
     source_quote: "2026 | $35,390 | $3,932.22 | $33,810 | $17,695 | $74,600 | $85,000"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'YAMPE'. Page modified 2026-10-28."
   - id: yampe.2027
     series: yampe
@@ -217,7 +243,9 @@ facts:
     source_quote: "2027 | $36,390 | $4,043.33 | $35,390 | $18,195 | $76,700 | $87,400"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'YAMPE'. Page modified 2026-10-28."
   - id: tfsa_annual_limit.2025
     series: tfsa_annual_limit
@@ -231,7 +259,9 @@ facts:
     source_quote: "2025 | $7,000 | $180,000"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
   - id: tfsa_annual_limit.2026
     series: tfsa_annual_limit
@@ -245,7 +275,9 @@ facts:
     source_quote: "2026 | $7,000 | $180,000"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
   - id: tfsa_annual_limit.2027
     series: tfsa_annual_limit
@@ -276,7 +308,9 @@ facts:
     source_quote: "$0 | $58,523 | 14%"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25), linked as '2026' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
   - id: ontario_brackets.2026
     series: ontario_brackets
@@ -295,7 +329,9 @@ facts:
     source_quote: "$0 | $53,891 | 5.05%"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25), linked as '2026' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
   - id: federal_brackets.2025
     series: federal_brackets
@@ -314,7 +350,9 @@ facts:
     source_quote: "$0 | $57,375 | 14.5%"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25), linked as '2025' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited. The page's footnote 1: 'The federal tax rate decreased from 15% to 14% on July 1, 2025, making the tax rate 14.5% for 2025.'"
   - id: ontario_brackets.2025
     series: ontario_brackets
@@ -333,7 +371,9 @@ facts:
     source_quote: "$0 | $52,886 | 5.05%"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25), linked as '2025' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
   - id: federal_brackets.2027
     series: federal_brackets
@@ -371,7 +411,9 @@ facts:
     source_quote: "July 2025 to June 2026 | 2024 | $90,997 | $148,451 | $154,196"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
   - id: oas_recovery_threshold.2025
     series: oas_recovery_threshold
@@ -385,7 +427,9 @@ facts:
     source_quote: "July 2026 to June 2027 | 2025 | $93,454 | $152,062 | $157,923"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
   - id: oas_recovery_threshold.2026
     series: oas_recovery_threshold
@@ -399,7 +443,9 @@ facts:
     source_quote: "July 2027 to June 2028 | 2026 | $95,323 | $155,320 | $161,320"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
   - id: oas_recovery_threshold.2027
     series: oas_recovery_threshold
@@ -424,7 +470,9 @@ facts:
     source_quote: "Payments decrease by 0.6% each month (7.2% per year), up to a maximum reduction of 36% if you start at age 60."
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
   - id: cpp_late_start_increase
     series: cpp_late_start_increase
@@ -437,7 +485,9 @@ facts:
     source_quote: "Payments increase by 0.7% each month (8.4% per year), up to 42% at age 70."
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
   - id: rrsp_contribution_deadline.2025
     series: rrsp_contribution_deadline
@@ -451,7 +501,9 @@ facts:
     source_quote: "March 2, 2026: Deadline to contribute to an RRSP, a PRPP, or an SPP"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Page 'Due dates and payment dates' (Date modified: 2026-09-17), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. tax_year is the year the contribution is deducted for."
   - id: rrsp_contribution_deadline.2026
     series: rrsp_contribution_deadline
@@ -489,7 +541,9 @@ facts:
     source_quote: "2023 | $6,500 | $160,000"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
   - id: tfsa_annual_limit.2024
     series: tfsa_annual_limit
@@ -503,5 +557,33 @@ facts:
     source_quote: "2024 | $7,000 | $170,000"
     authority: official_publication
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-09
     notes: "Table row, column 'TFSA dollar limit'. Page modified 2026-10-28."
+  - id: tfsa_first_year
+    series: tfsa_first_year
+    title: First calendar year a TFSA dollar limit applies (Income Tax Act 207.01(1), TFSA dollar limit)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "2009"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-207.01.html
+    source_quote: "for 2009 to 2012, $5,000"
+    authority: statute
+    as_of: 2026-11-09
+    status: unverified
+    notes: "The definition starts the TFSA dollar limit in 2009. Used by the P3 history reel. Act current to 2026-10-19."
+  - id: fhsa_first_available
+    series: fhsa_first_available
+    title: When an FHSA can first be opened (Income Tax Act 146.6(1), qualifying arrangement)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "after March 2023"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.6.html
+    source_quote: "that is entered into after March 2023"
+    authority: statute
+    as_of: 2026-11-09
+    status: unverified
+    notes: "Part (a) of the definition 'qualifying arrangement'. Used by the P3 history reel. Act current to 2026-10-19."
