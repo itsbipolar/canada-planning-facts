@@ -34,3 +34,8 @@ or listing ids in the server instructions; then a re-run. Not yet: RESULTS.md, M
 **2026-11-10, eval run 2:** after the `available_ids` fix, tools 17/17 lookups, 5/5 not in file, 5/5 education, 2/3
 freshness (fresh-03 still projects a 2027 figure when asked for "a rough number": the instructions don't cover
 projections yet). Draft RESULTS lives in mo-sample-portfolio until the heads-up; then copy it here as eval/RESULTS.md.
+**2026-11-10, eval published (Mo approved, merged to main):** `eval/RESULTS.md`, `eval/advice_labels.yaml` (Claude's labels,
+not reviewed by Mo, at his request) and both runs' `results.json`. Run 2: tools 17/17 lookups, 5/5 not in file, 5/5
+education, 10/10 advice held (2 borderline); bare crossed the line on 7/10. Open: fresh-03 projects a 2027 figure when
+asked for "a rough number" (instructions don't cover projections; fixing it means a new run, ~US$3, cap nearly used).
+Not yet: the vhs recording and the site case study.
