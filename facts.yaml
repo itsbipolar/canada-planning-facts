@@ -572,7 +572,9 @@ facts:
     source_quote: "for 2009 to 2012, $5,000"
     authority: statute
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "The definition starts the TFSA dollar limit in 2009. Used by the P3 history reel. Act current to 2026-10-19."
   - id: fhsa_first_available
     series: fhsa_first_available
@@ -585,5 +587,7 @@ facts:
     source_quote: "that is entered into after March 2023"
     authority: statute
     as_of: 2026-11-09
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Part (a) of the definition 'qualifying arrangement'. Used by the P3 history reel. Act current to 2026-10-19."
