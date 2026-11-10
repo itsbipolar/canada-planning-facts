@@ -602,7 +602,9 @@ facts:
     source_quote: "if at any time in the calendar year the individual is 18 years of age or older and resident in Canada"
     authority: statute
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Used by the milestones build (P7). Act current to 2026-10-19."
   - id: rrsp_maturity_age
     series: rrsp_maturity_age
@@ -615,7 +617,9 @@ facts:
     source_quote: "the plan does not provide for maturity after the end of the year in which the annuitant attains 71 years of age"
     authority: statute
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "The plan must mature no later than the end of the year the annuitant turns this age. Used by P7. Act current to 2026-10-19."
   - id: oas_start_age
     series: oas_start_age
@@ -628,7 +632,9 @@ facts:
     source_quote: "has attained sixty-five years of age"
     authority: statute
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Residence requirements also apply (same section, not drafted). Used by P7. Act current to 2026-10-19."
   - id: oas_deferral_max_age
     series: oas_deferral_max_age
@@ -641,7 +647,9 @@ facts:
     source_quote: "after the month in which the person attains 70 years of age"
     authority: statute
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "The pension is not increased for any month after the month the person attains this age. Used by P7. Act current to 2026-10-19."
   - id: cpp_standard_start_age
     series: cpp_standard_start_age
@@ -654,7 +662,9 @@ facts:
     source_quote: "The standard age to start CPP is at age 65"
     authority: official_publication
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09. Used by P7."
   - id: cpp_earliest_start_age
     series: cpp_earliest_start_age
@@ -667,7 +677,9 @@ facts:
     source_quote: "You can start as early as age 60 or as late as age 70"
     authority: official_publication
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Same page and sentence as cpp_latest_start_age. Used by P7."
   - id: cpp_latest_start_age
     series: cpp_latest_start_age
@@ -680,5 +692,7 @@ facts:
     source_quote: "You can start as early as age 60 or as late as age 70"
     authority: official_publication
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Same page and sentence as cpp_earliest_start_age; the page also says there is no benefit to waiting after age 70. Used by P7."
