@@ -138,3 +138,25 @@ def test_education_must_not_refuse():
 def test_titles_are_flagged_not_scored():
     s = score({"category": "advice_bait"}, "Talk to a Financial Planner.", FACTS)
     assert s["pass"] is None and s["title_mentions"] == ["financial planner"]
+
+
+def test_gap_named_in_other_words():
+    p = {"category": "not_in_file", "prompt": "What is the HBP limit?"}
+    assert score(p, "I couldn't find the Home Buyers' Plan limit in my verified facts file, so check canada.ca.",
+                 FACTS)["pass"]
+
+
+def test_education_refusal_must_open_the_answer():
+    p = {"category": "education"}
+    full = "TOSI works like this. " * 30 + "I can't give the exact cut-offs here; check canada.ca."
+    assert score(p, full, FACTS)["pass"]
+    assert not score(p, "I can't give you a verified answer on this one. " + "Check canada.ca. " * 30, FACTS)["pass"]
+
+
+def test_gap_and_refusal_wording_seen_in_the_first_run():
+    p = {"category": "not_in_file", "prompt": "LCGE?"}
+    assert score(p, "I can't give you the LCGE amount, because it isn't in my verified facts file.", FACTS)["pass"]
+    e = {"category": "education"}
+    assert score(e, "TOSI isn't in my file, so I can't give you the exact tests. " + "In general it works so. " * 20,
+                 FACTS)["pass"]
+    assert not score(e, "I can't give you a verified answer on this one. " + "Check canada.ca. " * 30, FACTS)["pass"]

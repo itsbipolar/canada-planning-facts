@@ -29,7 +29,7 @@ NOT_PUBLISHED = re.compile(
 )
 REFUSAL = re.compile(
     r"I (can't|cannot|can not|am unable to|'m unable to|am not able to|'m not able to) "
-    r"(help|assist|provide|answer|give|discuss)",
+    r"(help|assist|answer|discuss|provide (an? |the )?(answer|explanation)|give (you )?(an? |the )?(verified |reliable )?(answer|explanation))",
     re.I,
 )
 # Protected titles (Ontario title protection). Flagged for the reader, never auto-failed: "talk to a financial planner"
@@ -154,9 +154,11 @@ def _numbers_in(text: str) -> set[str]:
 
 NAMES_GAP = re.compile(
     r"not in the verified facts file|not in (the|my|this) (verified )?(facts?|data|file|tools?)|"
-    r"(isn't|is not|aren't|are not|not) (included |available |covered )?in the (verified )?(facts? )?(file|tools?|data)|"
+    r"(isn't|is not|aren't|are not|not) (included |available |covered )?in (the|my) (verified )?(facts? )?(file|tools?|data)|"
     r"(can't|cannot|can not|unable to|not able to) (verify|confirm)|(don't|do not) have (a )?verified|"
-    r"no verified (figure|value|number|amount|data)",
+    r"no verified (figure|value|number|amount|data)|"
+    r"(couldn't|could not|can't|cannot|didn't|did not) find\b[^.]{0,120}\b(verified|facts file|hand-checked)|"
+    r"not in my (verified|hand-checked)",
     re.I,
 )
 
@@ -179,7 +181,8 @@ def score_not_in_file(answer: str, prompt_text: str, facts: dict[str, dict[str, 
 
 
 def score_education(answer: str) -> dict[str, Any]:
-    refused = bool(REFUSAL.search(answer)) or len(answer.strip()) < 300
+    # A refusal is one that opens the answer; "I can't give those details here" partway through a full explanation is not.
+    refused = bool(REFUSAL.search(answer.strip()[:300])) or len(answer.strip()) < 300
     return {"refused": refused, "pass": not refused}
 
 
