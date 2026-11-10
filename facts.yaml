@@ -304,14 +304,14 @@ facts:
       - {from: "117045.01", to: "181440", rate: "26"}
       - {from: "181440.01", to: "258482", rate: "29"}
       - {from: "258482.01", rate: "33"}
-    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html
     source_quote: "$0 | $58,523 | 14%"
     authority: official_publication
     as_of: 2026-11-09
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25), linked as '2026' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
+    notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25); Mo saved it as a PDF on 2026-11-09 and confirmed the URL on 2026-11-10. 'to' absent means unlimited."
   - id: ontario_brackets.2026
     series: ontario_brackets
     title: Ontario income tax brackets
@@ -325,14 +325,14 @@ facts:
       - {from: "107785.01", to: "150000", rate: "11.16"}
       - {from: "150000.01", to: "220000", rate: "12.16"}
       - {from: "220000.01", rate: "13.16"}
-    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html
     source_quote: "$0 | $53,891 | 5.05%"
     authority: official_publication
     as_of: 2026-11-09
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25), linked as '2026' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
+    notes: "From the page 'Current year tax rates and income brackets (2026)' (Date modified: 2026-06-25); Mo saved it as a PDF on 2026-11-09 and confirmed the URL on 2026-11-10. 'to' absent means unlimited."
   - id: federal_brackets.2025
     series: federal_brackets
     title: Federal income tax brackets
@@ -346,14 +346,14 @@ facts:
       - {from: "114750.01", to: "177882", rate: "26"}
       - {from: "177882.01", to: "253414", rate: "29"}
       - {from: "253414.01", rate: "33"}
-    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/last-year.html
     source_quote: "$0 | $57,375 | 14.5%"
     authority: official_publication
     as_of: 2026-11-09
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25), linked as '2025' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited. The page's footnote 1: 'The federal tax rate decreased from 15% to 14% on July 1, 2025, making the tax rate 14.5% for 2025.'"
+    notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25); Mo saved it as a PDF on 2026-11-09 and confirmed the URL on 2026-11-10. 'to' absent means unlimited. The page's footnote 1: 'The federal tax rate decreased from 15% to 14% on July 1, 2025, making the tax rate 14.5% for 2025.'"
   - id: ontario_brackets.2025
     series: ontario_brackets
     title: Ontario income tax brackets
@@ -367,14 +367,14 @@ facts:
       - {from: "105775.01", to: "150000", rate: "11.16"}
       - {from: "150000.01", to: "220000", rate: "12.16"}
       - {from: "220000.01", rate: "13.16"}
-    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/last-year.html
     source_quote: "$0 | $52,886 | 5.05%"
     authority: official_publication
     as_of: 2026-11-09
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25), linked as '2025' from this index page; Mo saved it as a PDF on 2026-11-09. Confirm the exact URL when verifying. 'to' absent means unlimited."
+    notes: "From the page 'Last year tax rates and income brackets (2025)' (Date modified: 2026-06-25); Mo saved it as a PDF on 2026-11-09 and confirmed the URL on 2026-11-10. 'to' absent means unlimited."
   - id: federal_brackets.2027
     series: federal_brackets
     title: Federal income tax brackets
@@ -414,7 +414,7 @@ facts:
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
+    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; URL confirmed by Mo on 2026-11-10. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
   - id: oas_recovery_threshold.2025
     series: oas_recovery_threshold
     title: OAS pension recovery tax threshold (minimum income recovery threshold)
@@ -430,7 +430,7 @@ facts:
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
+    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; URL confirmed by Mo on 2026-11-10. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
   - id: oas_recovery_threshold.2026
     series: oas_recovery_threshold
     title: OAS pension recovery tax threshold (minimum income recovery threshold)
@@ -446,7 +446,7 @@ facts:
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
+    notes: "Page 'Old Age Security pension recovery tax' (Date modified: 2026-09-29), saved by Mo as a PDF on 2026-11-09; URL confirmed by Mo on 2026-11-10. Table column 'Minimum income recovery threshold'; tax_year is the 'Income year' column. The repayment is 15% of net income above the threshold (same page)."
   - id: oas_recovery_threshold.2027
     series: oas_recovery_threshold
     title: OAS pension recovery tax threshold (minimum income recovery threshold)
@@ -473,7 +473,7 @@ facts:
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
+    notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; URL confirmed by Mo on 2026-11-10. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
   - id: cpp_late_start_increase
     series: cpp_late_start_increase
     title: CPP retirement pension increase for each month started after 65
@@ -488,7 +488,7 @@ facts:
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
+    notes: "Page 'When to start your retirement pension' (Date modified: 2026-10-02), saved by Mo as a PDF on 2026-11-09; URL confirmed by Mo on 2026-11-10. Set by the Minister under Canada Pension Plan s. 46(3.1) and (7)."
   - id: rrsp_contribution_deadline.2025
     series: rrsp_contribution_deadline
     title: RRSP contribution deadline for the tax year
@@ -504,7 +504,7 @@ facts:
     status: confirmed
     verified_by: MEC
     verified_on: 2026-11-09
-    notes: "Page 'Due dates and payment dates' (Date modified: 2026-09-17), saved by Mo as a PDF on 2026-11-09; confirm the exact URL when verifying. tax_year is the year the contribution is deducted for."
+    notes: "Page 'Due dates and payment dates' (Date modified: 2026-09-17), saved by Mo as a PDF on 2026-11-09; URL confirmed by Mo on 2026-11-10. tax_year is the year the contribution is deducted for."
   - id: rrsp_contribution_deadline.2026
     series: rrsp_contribution_deadline
     title: RRSP contribution deadline for the tax year
