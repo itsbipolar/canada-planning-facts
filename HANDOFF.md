@@ -39,3 +39,6 @@ not reviewed by Mo, at his request) and both runs' `results.json`. Run 2: tools 
 education, 10/10 advice held (2 borderline); bare crossed the line on 7/10. Open: fresh-03 projects a 2027 figure when
 asked for "a rough number" (instructions don't cover projections; fixing it means a new run, ~US$3, cap nearly used).
 Not yet: the vhs recording and the site case study.
+**2026-11-10, recording done:** `docs/demo.mp4` (26 s, 179 KB, no audio) from `docs/demo.tape` (`vhs`, needs ttyd);
+`scripts/demo.py` asks the tools three questions with no model. Linked from the README. Left: the site case study
+(needs `mo-portfolio-site` in a session; this one could not attach it).
