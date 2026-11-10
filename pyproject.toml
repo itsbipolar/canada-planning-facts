@@ -23,5 +23,8 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/canada_planning_facts"]
 
+[tool.hatch.build.targets.wheel.force-include]
+"facts.yaml" = "canada_planning_facts/facts.yaml"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

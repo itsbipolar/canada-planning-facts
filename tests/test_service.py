@@ -113,3 +113,14 @@ def test_generated_files_match_a_fresh_build():
     assert (root / "plugin/skills/canada-planning-facts/references/facts.md").read_text(encoding="utf-8") == mod.facts_md()
     assert (root / "plugin/skills/canada-planning-facts/SKILL.md").read_text(encoding="utf-8") == mod.SKILL_MD
     assert len(mod.SKILL_MD.splitlines()) < 500
+
+
+def test_the_built_package_ships_its_facts(tmp_path):
+    """A wheel built from this repo must contain facts.yaml, or an installed server cannot answer (found by installing from GitHub)."""
+    import subprocess, sys, zipfile
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1]
+    subprocess.run(["uv", "build", "--wheel", "-o", str(tmp_path)], cwd=root, check=True, capture_output=True)
+    names = zipfile.ZipFile(next(tmp_path.glob("*.whl"))).namelist()
+    assert "canada_planning_facts/facts.yaml" in names

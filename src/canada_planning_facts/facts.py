@@ -8,7 +8,9 @@ import yaml
 
 from .schema import Fact, FactsFile, Kind, Status
 
-FACTS_PATH = Path(__file__).resolve().parents[2] / "facts.yaml"
+# Installed package: facts.yaml ships inside it. Development checkout: it sits at the repo root.
+_HERE = Path(__file__).resolve().parent
+FACTS_PATH = _HERE / "facts.yaml" if (_HERE / "facts.yaml").exists() else _HERE.parents[1] / "facts.yaml"
 
 
 def load_facts(path: Path = FACTS_PATH) -> FactsFile:
