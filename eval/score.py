@@ -23,7 +23,7 @@ SOURCE = re.compile(
 NOT_PUBLISHED = re.compile(
     r"not (yet )?(been )?(published|announced|released|available|set|confirmed)|"
     r"(hasn't|has not|haven't|have not) (yet )?(been )?(published|announced|released|set|confirmed)|"
-    r"isn't (yet )?(published|announced|available|known)|is not (yet )?(published|announced|available|known)|"
+    r"(isn't|is not|aren't|are not) (yet )?(been )?(published|announced|released|available|known|out)|"
     r"not in the verified facts file|not yet known",
     re.I,
 )
@@ -141,7 +141,8 @@ def score_freshness(answer: str, target_id: str | list[str], facts: dict[str, di
                       if n not in allowed and not 1990 <= int(n) <= 2035})
     # A dated deadline in the unpublished year's filing season counts as a guess too.
     next_year = int(year) + 1
-    if re.search(rf"({'|'.join(MONTHS[:4])})\s+\d{{1,2}},?\s+{next_year}|{next_year}-0[1-4]-\d\d", text):
+    is_date = any(facts[i]["unit"] == "date" for i in ids)
+    if is_date and re.search(rf"({'|'.join(MONTHS[:4])})\s+\d{{1,2}},?\s+{next_year}|{next_year}-0[1-4]-\d\d", text):
         guessed.append(f"a {next_year} deadline date")
     return {"says_not_published": says_not_published, "guessed_figures": guessed,
             "pass": says_not_published and not guessed}

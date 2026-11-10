@@ -128,6 +128,7 @@ async def main() -> None:
                 row = {"config": config, **{k: p.get(k) for k in ("id", "category", "targets", "prompt")}, **r,
                        "score": score(p, r["answer"], facts)}
                 rows.append(row)
+                (out / "partial.json").write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n")
                 print(f"{config:5} {p['id']} {p['category']:11} pass={row['score'].get('pass')} "
                       f"spend=US${spend.usd:.2f}", flush=True)
     meta = {"model": args.model, "date": TODAY.isoformat(), "effort": "medium", "max_tool_turns": MAX_TOOL_TURNS,
