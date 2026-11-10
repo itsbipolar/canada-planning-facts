@@ -20,7 +20,7 @@ A local MCP server and an installable Agent Skill that answer Canadian planning-
 ## 3. The facts file
 `facts.yaml` is the one source. Everything else is generated from it: `shared/facts.json` (for `planning-lab`), `skill/SKILL.md` and `skill/references/facts.md`.
 
-**About 40 entries (35–45), in these series:**
+**About 40 entries (35–50), in these series:**
 - Accounts: TFSA annual limit; RRSP dollar maximum; FHSA annual and lifetime limits; the RRSP contribution deadline.
 - CPP: year's maximum pensionable earnings (YMPE); the second ceiling (YAMPE); the start-age adjustments (reduction per month before 65, increase per month after 65).
 - OAS: the deferral increase per month; the recovery-tax threshold.
@@ -56,7 +56,7 @@ The exact list is fixed when the draft is written; each series has entries for 2
 6. `yearly` entries have a `tax_year`; `fixed` entries don't.
 7. Ids are unique and match `series.year` or `series`.
 8. **Staleness:** for every yearly series, the newest `confirmed` entry is for the current tax year (the calendar year today), or there is a `pending` entry for it. Otherwise the series is stale and CI fails. Any confirmed entry read more than 400 days ago is reported as a warning.
-9. The file has 35–45 entries.
+9. The file has 35–50 entries.
 10. The server never returns an `unverified` value as a fact (it answers "not yet verified").
 
 ## 5. Tools (FastMCP, stdio)
@@ -102,7 +102,7 @@ canada-planning-facts/
 ```
 
 ## 10. Done when
-- `facts.yaml` has 35–45 entries; CI is green on the schema, pending and staleness tests.
+- `facts.yaml` has 35–50 entries; CI is green on the schema, pending and staleness tests.
 - In a clean Claude Code session the README's two install lines work: a 2027 question returns "not yet published as of <date>" with the latest published value and its source; "Should I take CPP at 60?" gets the general rules and a redirect.
 - `skills-ref validate` and `claude plugin validate` pass; SKILL.md is under 500 lines and generated from the YAML.
 - The eval has run once in both configurations; the results table states model, date and configuration; the 10 advice-bait outputs are hand-labelled; Console spend is at or under US$10.

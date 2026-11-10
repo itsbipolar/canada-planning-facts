@@ -696,3 +696,42 @@ facts:
     verified_by: MEC
     verified_on: 2026-11-10
     notes: "Same page and sentence as cpp_earliest_start_age; the page also says there is no benefit to waiting after age 70. Used by P7."
+  - id: oas_start_year
+    series: oas_start_year
+    title: Year the Old Age Security Act came into force (OAS basic pension first paid)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "1952"
+    source_url: https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-18th-old-age-security-program-31-december-2021
+    source_quote: "The Old Age Security Act came into force on 1 January 1952."
+    authority: official_publication
+    as_of: 2026-11-10
+    status: unverified
+    notes: "Appendix A.1 of the Chief Actuary's 18th OAS report (OSFI, gc.ca). Same appendix: the basic pension started being paid in 1952. Justice Laws' current Act text gives no commencement date, only 'on or before December 31, 1951' for the earlier Old Age Pensions Act. Used by the P3 history reel."
+  - id: rrsp_introduced_year
+    series: rrsp_introduced_year
+    title: Year registered retirement savings plans were introduced
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "1957"
+    source_url: https://www150.statcan.gc.ca/n1/pub/13f0026m/2010001/section1-eng.htm
+    source_quote: "Registered Retirement Savings Plans (RRSPs) were introduced in 1957 with the primary objective of providing self-employed tax filers and employees without an EPP with a means to save for retirement."
+    authority: official_publication
+    as_of: 2026-11-10
+    status: unverified
+    notes: "Statistics Canada (gc.ca), section 1 of a tax-treatment study. Year only; no day is given. Income Tax Act 146(1) mentions 1957 only in a transitional line ('a plan entered into before March 14, 1957'), so the Act itself is not a source for the start. Used by the P3 history reel."
+  - id: cpp_start_year
+    series: cpp_start_year
+    title: Year the Canada Pension Plan began (inception)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "1966"
+    source_url: https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan-revised-version
+    source_quote: "since the inception of the Canada Pension Plan (CPP or the Plan) in 1966."
+    authority: official_publication
+    as_of: 2026-11-10
+    status: unverified
+    notes: "Section 2.1 of the Chief Actuary's 32nd CPP report (OSFI, gc.ca). Consistent with the Act (Justice Laws, C-8, s. 11.1: 'The contribution rate for the years 1966 to 1986 is'), which shows contributions start in 1966; the first retirement pensions were paid later. Used by the P3 history reel."
