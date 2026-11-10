@@ -124,3 +124,11 @@ def test_the_built_package_ships_its_facts(tmp_path):
     subprocess.run(["uv", "build", "--wheel", "-o", str(tmp_path)], cwd=root, check=True, capture_output=True)
     names = zipfile.ZipFile(next(tmp_path.glob("*.whl"))).namelist()
     assert "canada_planning_facts/facts.yaml" in names
+
+
+def test_unknown_id_lists_the_ids_that_exist_without_values():
+    r = service.get_fact("rrif_min_factors")
+    assert r["value"] is None and r["message"] == "Not in the verified facts file."
+    assert "rrif_minimum_factors" in r["available_ids"] and "tfsa_annual_limit.2027" in r["available_ids"]
+    assert all(isinstance(t, str) for t in r["available_ids"].values())  # titles only, never values
+    assert "available_ids" not in service.get_fact("tfsa_annual_limit.2026")

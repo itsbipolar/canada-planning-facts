@@ -13,14 +13,17 @@ mcp = FastMCP(
         "Hand-verified Canadian planning facts with their official sources. Answer general rules with the value, its source "
         "and its date. If a value is pending, say it is not yet published and give the latest published value. If a value is "
         "not in the verified file, say so; never fill the gap from memory. For personal 'should I' questions, give the general "
-        "rule and neutral trade-offs, then point to a qualified professional; never recommend. Education only, not advice."
+        "rule and neutral trade-offs, then point to a qualified professional; never recommend. Ids are exact: if get_fact "
+        "says an id is not in the file, check its available_ids before concluding a fact is missing. Explaining how a rule "
+        "works in general is education: answer it even when the file has no figure for it, giving no figure from memory. "
+        "Education only, not advice."
     ),
 )
 
 
 @mcp.tool
 def get_fact(id: str) -> dict[str, Any]:
-    """One fact by id, for example 'tfsa_annual_limit.2026' or 'oas_start_age'. Returns value, source, as-of date and status."""
+    """One fact by exact id, for example 'tfsa_annual_limit.2026' or 'oas_start_age'. Returns value, source, as-of date and status. An unknown id returns 'Not in the verified facts file.' with available_ids: every id that exists, with its title."""
     return service.get_fact(id)
 
 

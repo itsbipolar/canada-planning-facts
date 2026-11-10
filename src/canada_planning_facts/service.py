@@ -61,9 +61,18 @@ def _serve(facts: FactsFile, f: Fact | None, today: date, asked: str) -> dict[st
     return _unavailable("Not in the verified facts file.", id=asked)  # unverified: never served as a fact
 
 
+def available_ids(facts: FactsFile) -> dict[str, str]:
+    """The ids get_fact can answer (confirmed or pending), with their titles. No values: those come only from get_fact."""
+    return {f.id: f.title for f in facts.facts if f.status in (Status.confirmed, Status.pending)}
+
+
 def get_fact(fact_id: str, facts: FactsFile | None = None, today: date | None = None) -> dict[str, Any]:
     facts = facts or load_facts(); today = today or date.today()
-    return _serve(facts, next((f for f in facts.facts if f.id == fact_id), None), today, fact_id)
+    f = next((x for x in facts.facts if x.id == fact_id), None)
+    out = _serve(facts, f, today, fact_id)
+    if f is None:  # an unknown id: say so, and list the ids that do exist so a guessed name can be corrected
+        out["available_ids"] = available_ids(facts)
+    return out
 
 
 def get_limit(account: str, year: int | None = None, facts: FactsFile | None = None, today: date | None = None) -> dict[str, Any]:
