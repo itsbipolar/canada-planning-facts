@@ -752,7 +752,9 @@ facts:
     source_quote: "Budget 2026 proposes to change the T1 filing and balance-due dates to May 15 for all individuals, including self-employed individuals and their spouses or common-law partners."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Section 'T1 Filing and Balance-Due Dates' (heading as on the page). Used by P4."
   - id: budget2026_t1_filing_date_start
     series: budget2026_t1_filing_date_start
@@ -765,7 +767,9 @@ facts:
     source_quote: "These measures would apply to the 2027 and subsequent taxation years."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "The sentence right after the May 15 proposal. The same sentence appears in other sections of the page. Used by P4."
   - id: budget2026_t1135_threshold
     series: budget2026_t1135_threshold
@@ -778,7 +782,9 @@ facts:
     source_quote: "Budget 2026 proposes to increase the threshold above which Form T1135 must be filed from $100,000 to $200,000."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Simplified reporting would move from less than $250,000 to less than $500,000 (same paragraph). Used by P4."
   - id: budget2026_t1135_start
     series: budget2026_t1135_start
@@ -791,7 +797,9 @@ facts:
     source_quote: "These measures would apply to taxation years or fiscal periods that end after 2026."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Same paragraph as budget2026_t1135_threshold. Used by P4."
   - id: budget2026_instalment_threshold
     series: budget2026_instalment_threshold
@@ -804,7 +812,9 @@ facts:
     source_quote: "Budget 2026 proposes to increase the threshold from $3,000 to $7,500 for corporations and individuals resident outside Quebec, and from $1,800 to $4,500 for individuals resident in Quebec."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Section 'Increasing the Instalment Thresholds'. Indexed to inflation, rounded to the nearest $500. Used by P4."
   - id: budget2026_instalment_start
     series: budget2026_instalment_start
@@ -817,7 +827,9 @@ facts:
     source_quote: "This measure would apply to taxation years that begin on or after January 1, 2028."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Same section as budget2026_instalment_threshold. Used by P4."
   - id: budget2026_caregiver_refundable_start
     series: budget2026_caregiver_refundable_start
@@ -830,7 +842,9 @@ facts:
     source_quote: "This measure would apply to the 2027 and subsequent taxation years."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Section 'Canada Caregiver Credit', the sentence after 'Budget 2026 proposes to make the CCC refundable'. The same sentence appears in other sections. Used by P4."
   - id: budget2026_caregiver_max_relief_2027
     series: budget2026_caregiver_max_relief_2027
@@ -843,7 +857,9 @@ facts:
     source_quote: "$9,001 (providing tax relief of up to $1,260) in respect of infirm dependants who are parents, grandparents, siblings, aunts, uncles, nieces, nephews, or adult children of the caregiver or of the caregiver's spouse or common-law partner."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "The 2027 maximum for that group; other groups have lower amounts. Refundability is the proposal; the amount is the credit's 2027 parameter as stated in the budget. Used by P4."
   - id: budget2026_rrsp_for_life_consultation_deadline
     series: budget2026_rrsp_for_life_consultation_deadline
@@ -856,7 +872,9 @@ facts:
     source_quote: "Interested parties are invited to send written representations to the Department of Finance Canada at RRSP-consultation-REER@fin.gc.ca by January 8, 2027."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "A consultation, not a proposal with a start date. The page: 'This would eliminate the need for individuals to convert their RRSP to a RRIF at age 71. Individuals over the age of 71 would continue to be required to make minimum withdrawals.' Used by P4."
   - id: budget2026_cgi_limit
     series: budget2026_cgi_limit
@@ -869,7 +887,9 @@ facts:
     source_quote: "up to a $15-million limit. This $15 million would apply separately to each qualifying individual in respect of each business."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Section 'Canada Growth Incentive', first paragraph. Narrow: qualifying shares of qualifying corporations only, with many conditions and excluded businesses. Used by P4."
   - id: budget2026_cgi_issue_window
     series: budget2026_cgi_issue_window
@@ -882,5 +902,20 @@ facts:
     source_quote: "This measure would apply in respect of qualifying shares of a qualifying corporation issued on or after Budget Day and before 2037."
     authority: budget_proposal
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Section 'Coming into Force' of the CGI. Budget Day's date is not stated in the page text (only 'Date modified: 2026-11-05'); Mo to supply a source for the date. Used by P4."
+  - id: budget2026_budget_day
+    series: budget2026_budget_day
+    title: "Date Budget 2026 was presented (Budget Day)"
+    kind: fixed
+    jurisdiction: federal
+    unit: date
+    value: 2026-11-05
+    source_url: https://budget.canada.ca/2026/report-rapport/toc-tdm-en.html
+    source_quote: "Date modified: 2026-11-05"
+    authority: official_publication
+    as_of: 2026-11-10
+    status: unverified
+    notes: "Source given by Mo. The budget pages say 'Budget Day' without printing its date in the text; this is the page's own date line, which matches the page metadata datePublished 2026-11-05. Used by P4 to place the Growth Incentive start."
