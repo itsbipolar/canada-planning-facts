@@ -707,7 +707,9 @@ facts:
     source_quote: "The Old Age Security Act came into force on 1 January 1952."
     authority: official_publication
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Appendix A.1 of the Chief Actuary's 18th OAS report (OSFI, gc.ca). Same appendix: the basic pension started being paid in 1952. Justice Laws' current Act text gives no commencement date, only 'on or before December 31, 1951' for the earlier Old Age Pensions Act. Used by the P3 history reel."
   - id: rrsp_introduced_year
     series: rrsp_introduced_year
@@ -720,7 +722,9 @@ facts:
     source_quote: "Registered Retirement Savings Plans (RRSPs) were introduced in 1957 with the primary objective of providing self-employed tax filers and employees without an EPP with a means to save for retirement."
     authority: official_publication
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Statistics Canada (gc.ca), section 1 of a tax-treatment study. Year only; no day is given. Income Tax Act 146(1) mentions 1957 only in a transitional line ('a plan entered into before March 14, 1957'), so the Act itself is not a source for the start. Used by the P3 history reel."
   - id: cpp_start_year
     series: cpp_start_year
@@ -733,5 +737,7 @@ facts:
     source_quote: "since the inception of the Canada Pension Plan (CPP or the Plan) in 1966."
     authority: official_publication
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Section 2.1 of the Chief Actuary's 32nd CPP report (OSFI, gc.ca). Consistent with the Act (Justice Laws, C-8, s. 11.1: 'The contribution rate for the years 1966 to 1986 is'), which shows contributions start in 1966; the first retirement pensions were paid later. Used by the P3 history reel."

@@ -47,3 +47,6 @@ Only confirmed values are listed as facts. Pending means not yet published.
 - `cpp_standard_start_age`: Standard age to start the CPP retirement pension: 65 (years). Source: https://www.canada.ca/en/services/benefits/publicpensions/cpp/when-start.html (read 2026-11-10).
 - `cpp_earliest_start_age`: Earliest age to start the CPP retirement pension: 60 (years). Source: https://www.canada.ca/en/services/benefits/publicpensions/cpp/when-start.html (read 2026-11-10).
 - `cpp_latest_start_age`: Latest age to start the CPP retirement pension (no benefit to wait after it): 70 (years). Source: https://www.canada.ca/en/services/benefits/publicpensions/cpp/when-start.html (read 2026-11-10).
+- `oas_start_year`: Year the Old Age Security Act came into force (OAS basic pension first paid): 1952 (text). Source: https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-18th-old-age-security-program-31-december-2021 (read 2026-11-10).
+- `rrsp_introduced_year`: Year registered retirement savings plans were introduced: 1957 (text). Source: https://www150.statcan.gc.ca/n1/pub/13f0026m/2010001/section1-eng.htm (read 2026-11-10).
+- `cpp_start_year`: Year the Canada Pension Plan began (inception): 1966 (text). Source: https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan-revised-version (read 2026-11-10).
