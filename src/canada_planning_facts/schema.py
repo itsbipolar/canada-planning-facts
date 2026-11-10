@@ -48,6 +48,7 @@ class Unit(str, Enum):
     factor = "factor"
     date = "date"
     text = "text"
+    years = "years"
 
 
 class Authority(str, Enum):

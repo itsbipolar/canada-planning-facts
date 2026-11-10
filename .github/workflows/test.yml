@@ -1,0 +1,15 @@
+name: test
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '17 12 * * 1' # weekly: the staleness test goes red in January until the new year's entries are added
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --group dev
+      - run: uv run pytest -q

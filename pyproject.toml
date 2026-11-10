@@ -4,10 +4,17 @@ version = "0.0.1"
 description = "Hand-verified Canadian planning facts as a local MCP server and Agent Skill. Prototype; education, not advice."
 requires-python = ">=3.12"
 license = "MIT"
-dependencies = ["pydantic>=2.9,<3", "pyyaml>=6.0,<7"]
+dependencies = [
+    "fastmcp==4.1.7",
+    "pydantic>=2.9,<3",
+    "pyyaml>=6.0,<7",
+]
 
 [dependency-groups]
 dev = ["pytest>=8.3,<9"]
+
+[project.scripts]
+canada-planning-facts = "canada_planning_facts.server:main"
 
 [build-system]
 requires = ["hatchling"]
