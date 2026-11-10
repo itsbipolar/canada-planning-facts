@@ -55,6 +55,7 @@ class Authority(str, Enum):
     statute = "statute"
     cra_position = "cra_position"
     official_publication = "official_publication"
+    budget_proposal = "budget_proposal"  # proposed in a federal budget: not law until enacted
 
 
 class BracketRow(BaseModel):
