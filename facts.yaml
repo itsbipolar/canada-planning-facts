@@ -917,5 +917,7 @@ facts:
     source_quote: "Date modified: 2026-11-05"
     authority: official_publication
     as_of: 2026-11-10
-    status: unverified
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-10
     notes: "Source given by Mo. The budget pages say 'Budget Day' without printing its date in the text; this is the page's own date line, which matches the page metadata datePublished 2026-11-05. Used by P4 to place the Growth Incentive start."
