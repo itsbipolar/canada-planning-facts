@@ -1,0 +1,42 @@
+# Verified facts
+
+_Prototype. AI-assisted. Reference data: verify at the source. Education, not advice._
+
+Only confirmed values are listed as facts. Pending means not yet published.
+
+- `rrif_minimum_factors`: RRIF minimum withdrawal factors by age (Income Tax Regulations 7308(4)): a table (use get_fact or get_brackets). Source: https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._945/section-7308.html (read 2026-11-09).
+- `fhsa_annual_base_limit`: FHSA annual participation room before carryforward (Income Tax Act 146.6(1), annual FHSA limit): 8000 (CAD). Source: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.6.html (read 2026-11-09).
+- `fhsa_lifetime_limit`: FHSA lifetime contribution limit (Income Tax Act 146.6): 40000 (CAD). Source: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.6.html (read 2026-11-09).
+- `oas_deferral_increase`: OAS pension increase for each month of voluntary deferral (Old Age Security Act 7.1): 0.6 (percent_per_month). Source: https://laws-lois.justice.gc.ca/eng/acts/O-9/section-7.1.html (read 2026-11-09).
+- `rrsp_dollar_limit.2025`: RRSP dollar limit: 32490 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `rrsp_dollar_limit.2026`: RRSP dollar limit: 33810 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `rrsp_dollar_limit.2027`: RRSP dollar limit: 35390 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `rrsp_dollar_limit.2028`: RRSP dollar limit: 36390 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `ympe.2025`: Year's maximum pensionable earnings (YMPE): 71300 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `ympe.2026`: Year's maximum pensionable earnings (YMPE): 74600 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `ympe.2027`: Year's maximum pensionable earnings (YMPE): 76700 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `yampe.2025`: Year's additional maximum pensionable earnings (YAMPE): 81200 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `yampe.2026`: Year's additional maximum pensionable earnings (YAMPE): 85000 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `yampe.2027`: Year's additional maximum pensionable earnings (YAMPE): 87400 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `tfsa_annual_limit.2025`: TFSA dollar limit: 7000 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `tfsa_annual_limit.2026`: TFSA dollar limit: 7000 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `tfsa_annual_limit.2027`: TFSA dollar limit: **not yet published** as of the last check (2026-11-09).
+- `federal_brackets.2026`: Federal income tax brackets: a table (use get_fact or get_brackets). Source: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html (read 2026-11-09).
+- `ontario_brackets.2026`: Ontario income tax brackets: a table (use get_fact or get_brackets). Source: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html (read 2026-11-09).
+- `federal_brackets.2025`: Federal income tax brackets: a table (use get_fact or get_brackets). Source: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/last-year.html (read 2026-11-09).
+- `ontario_brackets.2025`: Ontario income tax brackets: a table (use get_fact or get_brackets). Source: https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/last-year.html (read 2026-11-09).
+- `federal_brackets.2027`: Federal income tax brackets: **not yet published** as of the last check (2026-11-09).
+- `ontario_brackets.2027`: Ontario income tax brackets: **not yet published** as of the last check (2026-11-09).
+- `oas_recovery_threshold.2024`: OAS pension recovery tax threshold (minimum income recovery threshold): 90997 (CAD). Source: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html (read 2026-11-09).
+- `oas_recovery_threshold.2025`: OAS pension recovery tax threshold (minimum income recovery threshold): 93454 (CAD). Source: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html (read 2026-11-09).
+- `oas_recovery_threshold.2026`: OAS pension recovery tax threshold (minimum income recovery threshold): 95323 (CAD). Source: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html (read 2026-11-09).
+- `oas_recovery_threshold.2027`: OAS pension recovery tax threshold (minimum income recovery threshold): **not yet published** as of the last check (2026-11-09).
+- `cpp_early_start_reduction`: CPP retirement pension reduction for each month started before 65: 0.6 (percent_per_month). Source: https://www.canada.ca/en/services/benefits/publicpensions/cpp/when-start.html (read 2026-11-09).
+- `cpp_late_start_increase`: CPP retirement pension increase for each month started after 65: 0.7 (percent_per_month). Source: https://www.canada.ca/en/services/benefits/publicpensions/cpp/when-start.html (read 2026-11-09).
+- `rrsp_contribution_deadline.2025`: RRSP contribution deadline for the tax year: 2026-03-02 (date). Source: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html (read 2026-11-09).
+- `rrsp_contribution_deadline.2026`: RRSP contribution deadline for the tax year: **not yet published** as of the last check (2026-11-09).
+- `rrsp_contribution_deadline.2027`: RRSP contribution deadline for the tax year: **not yet published** as of the last check (2026-11-09).
+- `tfsa_annual_limit.2023`: TFSA dollar limit: 6500 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `tfsa_annual_limit.2024`: TFSA dollar limit: 7000 (CAD). Source: https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html (read 2026-11-09).
+- `tfsa_first_year`: First calendar year a TFSA dollar limit applies (Income Tax Act 207.01(1), TFSA dollar limit): 2009 (text). Source: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-207.01.html (read 2026-11-09).
+- `fhsa_first_available`: When an FHSA can first be opened (Income Tax Act 146.6(1), qualifying arrangement): after March 2023 (text). Source: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.6.html (read 2026-11-09).

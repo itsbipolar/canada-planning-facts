@@ -99,3 +99,17 @@ def test_server_exposes_five_tools_and_answers():
     names, data = asyncio.run(go())
     assert names == {"get_fact", "get_limit", "get_brackets", "list_pending", "boc_series"}
     assert data["status"] == "pending" and data["latest_published"]["value"] == "7000"
+
+
+def test_generated_files_match_a_fresh_build():
+    """CI fails if SKILL.md, references/facts.md or shared/facts.json were edited by hand or the facts changed without rebuilding."""
+    import importlib.util
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1]
+    spec = importlib.util.spec_from_file_location("build_skill", root / "scripts" / "build_skill.py")
+    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    assert (root / "shared" / "facts.json").read_text(encoding="utf-8") == mod.facts_json()
+    assert (root / "plugin/skills/canada-planning-facts/references/facts.md").read_text(encoding="utf-8") == mod.facts_md()
+    assert (root / "plugin/skills/canada-planning-facts/SKILL.md").read_text(encoding="utf-8") == mod.SKILL_MD
+    assert len(mod.SKILL_MD.splitlines()) < 500

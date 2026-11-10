@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "canada-planning-facts": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/itsbipolar/canada-planning-facts", "canada-planning-facts"]
+    }
+  }
+}

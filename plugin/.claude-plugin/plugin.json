@@ -1,0 +1,9 @@
+{
+  "name": "canada-planning-facts",
+  "version": "0.1.0",
+  "description": "Hand-verified Canadian planning facts with their official sources, as an MCP server and an Agent Skill. Prototype. AI-assisted. Education, not advice.",
+  "license": "MIT",
+  "author": {
+    "name": "Mohammed El Chayeb"
+  }
+}

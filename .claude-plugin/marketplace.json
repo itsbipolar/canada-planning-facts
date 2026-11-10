@@ -1,0 +1,11 @@
+{
+  "name": "canada-planning-facts",
+  "owner": { "name": "Mohammed El Chayeb" },
+  "plugins": [
+    {
+      "name": "canada-planning-facts",
+      "source": "./plugin",
+      "description": "Hand-verified Canadian planning facts with their official sources: an MCP server and an Agent Skill. Prototype. Education, not advice."
+    }
+  ]
+}
