@@ -31,3 +31,6 @@ repo (`eval/results/` is ignored) until the compliance heads-up: a copy is in mo
 `p1-spec/eval/results-2026-11-10/`. **Fix next:** the tools only take exact ids, and the model guessed wrong ids for RRIF
 factors, CPP start adjustments and start ages, then said "not in the file". Consider a `search_facts`/`list_facts` tool
 or listing ids in the server instructions; then a re-run. Not yet: RESULTS.md, Mo's advice labels.
+**2026-11-10, eval run 2:** after the `available_ids` fix, tools 17/17 lookups, 5/5 not in file, 5/5 education, 2/3
+freshness (fresh-03 still projects a 2027 figure when asked for "a rough number": the instructions don't cover
+projections yet). Draft RESULTS lives in mo-sample-portfolio until the heads-up; then copy it here as eval/RESULTS.md.

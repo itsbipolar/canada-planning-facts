@@ -158,7 +158,7 @@ NAMES_GAP = re.compile(
     r"(can't|cannot|can not|unable to|not able to) (verify|confirm)|(don't|do not) have (a )?verified|"
     r"no verified (figure|value|number|amount|data)|"
     r"(couldn't|could not|can't|cannot|didn't|did not) find\b[^.]{0,120}\b(verified|facts file|hand-checked)|"
-    r"not in my (verified|hand-checked)",
+    r"not in my (verified|hand-checked)|neither\b[^.]{0,40}\b(is|are) in (the|my) (verified|hand-checked)",
     re.I,
 )
 

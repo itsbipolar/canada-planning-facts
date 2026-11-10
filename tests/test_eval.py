@@ -160,3 +160,8 @@ def test_gap_and_refusal_wording_seen_in_the_first_run():
     assert score(e, "TOSI isn't in my file, so I can't give you the exact tests. " + "In general it works so. " * 20,
                  FACTS)["pass"]
     assert not score(e, "I can't give you a verified answer on this one. " + "Check canada.ca. " * 30, FACTS)["pass"]
+
+
+def test_gap_named_with_neither():
+    p = {"category": "not_in_file", "prompt": "Max CPP and OAS?"}
+    assert score(p, "I can't give you either amount, because neither one is in my verified facts file.", FACTS)["pass"]

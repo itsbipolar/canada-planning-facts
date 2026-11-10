@@ -19,6 +19,6 @@ for row in data["rows"]:
     row.setdefault("score_as_run", row["score"])
     row["score"] = score(prompts[row["id"]], row["answer"], facts)
 data["meta"]["rescored"] = ("Re-scored after the run: two scorer bugs found by reading answers (gaps named as 'couldn't find it in "
-                            "my verified facts file' or 'isn't in my verified facts file'; a partial 'I can't give those "
+                            "my verified facts file' , 'isn't in my verified facts file' or 'neither one is in my verified facts file'; a partial 'I can't give those "
                             "details' inside a full education answer counted as a refusal). score_as_run keeps the original scores.")
 path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
