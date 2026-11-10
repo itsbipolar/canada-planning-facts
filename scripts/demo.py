@@ -1,7 +1,8 @@
 """Three questions to the MCP server, in-process, for the recording. No model is called.
 
-    uv run python scripts/demo.py            # the answers as JSON
-    uv run python scripts/demo.py --brief 1  # question 1 only, in short readable lines (for the video)
+    uv run python scripts/demo.py                # the answers as JSON
+    uv run python scripts/demo.py --brief 1      # question 1 only, in short readable lines (the wide video)
+    uv run python scripts/demo.py --brief 1 36   # the same, at most 36 characters wide (the phone video)
 """
 import asyncio
 import json
@@ -25,7 +26,13 @@ def money(v: str, unit: str) -> str:
     return f"${int(v):,}" if unit == "CAD" else f"{v} {unit}"
 
 
-def brief(q: str, tool: str, args: dict, r: dict) -> None:
+def hang(label: str, value: str, width: int) -> list[str]:
+    """The label, then the value wrapped so its later lines line up under its first."""
+    lines = textwrap.wrap(value, width - len(label)) or [""]
+    return [label + lines[0]] + [" " * len(label) + line for line in lines[1:]]
+
+
+def brief(q: str, tool: str, args: dict, r: dict, width: int = 52) -> None:
     rows = []
     if r.get("value") is not None:
         rows.append(("value", money(r["value"], r["unit"])))
@@ -41,23 +48,26 @@ def brief(q: str, tool: str, args: dict, r: dict) -> None:
         rows.append(("source", urlparse(r["source_url"]).netloc.removeprefix("www.")))
     if r.get("as_of"):
         rows.append(("read on", r["as_of"]))
-    print(f"Q: {q}\n   tool: {tool}({', '.join(str(v) for v in args.values())})\n")
+    out = textwrap.wrap(f"Q: {q}", width, subsequent_indent="   ")
+    call = f"({', '.join(str(v) for v in args.values())})"
+    out += [f"   tool: {tool}{call}"] if len(f"   tool: {tool}{call}") <= width else [f"   tool: {tool}", f"         {call}"]
+    out += [""]
     for k, v in rows:
-        print(f"   {k:<10}{v}")
-    print()
-    for line in textwrap.wrap(r["note"], 52):
-        print(f"   {line}")
+        out += hang(f"   {k:<10}", v, width)
+    out += [""] + ["   " + line for line in textwrap.wrap(r["note"], width - 3)]
+    print("\n".join(out))
 
 
 async def main() -> None:
-    only = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[1] == "--brief" else None
+    brief_n = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[1] == "--brief" else None
+    width = int(sys.argv[3]) if len(sys.argv) > 3 else 52
     async with Client(mcp) as c:
         for n, (q, tool, args) in enumerate(QUESTIONS, 1):
-            if only and n != only:
+            if brief_n and n != brief_n:
                 continue
             r = json.loads((await c.call_tool(tool, args)).content[0].text)
-            if only:
-                brief(q, tool, args, r)
+            if brief_n:
+                brief(q, tool, args, r, width)
                 continue
             out = {k: r[k] for k in KEEP if r.get(k) is not None}
             if r.get("latest_published"):
