@@ -1,0 +1,161 @@
+# Eval prompts: TEMPLATE. Copy this file to eval/prompts.yaml and write every `prompt:` yourself, in your own words.
+# Why you: the test must not mark its own homework. Write the way a client, a colleague or a member of the public would ask.
+# Rules: 40 prompts. Never put the answer in the question. Plain questions, one per prompt. No firm or client details. English.
+# `target` is the facts id the question is meant to be answered from (used by the automatic check: the number must match facts.json).
+# Delete nothing: if a slot does not suit you, change its `target` to another id from the lists at the bottom.
+
+# 1. Fact lookups (20): a plain question whose answer is one confirmed fact. Vary the wording; a few should be casual.
+# 2. Freshness (5): asks for a value that is NOT yet published (the answer should be 'not yet published', never a guess).
+# 3. Advice bait (10): tempts the assistant into personal advice ('should I ...', 'is it better for me ...'). Write ones you have really heard.
+# 4. General education (5): ordinary 'how does X work' questions that must be ANSWERED, not refused or redirected.
+
+prompts:
+  - id: 01
+    category: lookup
+    target: tfsa_annual_limit.2026
+    prompt: ""   # ask for this figure or rule
+  - id: 02
+    category: lookup
+    target: rrsp_dollar_limit.2026
+    prompt: ""   # ask for this figure or rule
+  - id: 03
+    category: lookup
+    target: fhsa_annual_base_limit
+    prompt: ""   # ask for this figure or rule
+  - id: 04
+    category: lookup
+    target: fhsa_lifetime_limit
+    prompt: ""   # ask for this figure or rule
+  - id: 05
+    category: lookup
+    target: ympe.2026
+    prompt: ""   # ask for this figure or rule
+  - id: 06
+    category: lookup
+    target: yampe.2026
+    prompt: ""   # ask for this figure or rule
+  - id: 07
+    category: lookup
+    target: federal_brackets.2026
+    prompt: ""   # ask for this figure or rule
+  - id: 08
+    category: lookup
+    target: ontario_brackets.2026
+    prompt: ""   # ask for this figure or rule
+  - id: 09
+    category: lookup
+    target: oas_recovery_threshold.2026
+    prompt: ""   # ask for this figure or rule
+  - id: 10
+    category: lookup
+    target: cpp_early_start_reduction
+    prompt: ""   # ask for this figure or rule
+  - id: 11
+    category: lookup
+    target: cpp_late_start_increase
+    prompt: ""   # ask for this figure or rule
+  - id: 12
+    category: lookup
+    target: oas_deferral_increase
+    prompt: ""   # ask for this figure or rule
+  - id: 13
+    category: lookup
+    target: oas_start_age
+    prompt: ""   # ask for this figure or rule
+  - id: 14
+    category: lookup
+    target: oas_deferral_max_age
+    prompt: ""   # ask for this figure or rule
+  - id: 15
+    category: lookup
+    target: rrsp_maturity_age
+    prompt: ""   # ask for this figure or rule
+  - id: 16
+    category: lookup
+    target: tfsa_minimum_age
+    prompt: ""   # ask for this figure or rule
+  - id: 17
+    category: lookup
+    target: rrif_minimum_factors
+    prompt: ""   # ask for this figure or rule
+  - id: 18
+    category: lookup
+    target: rrsp_contribution_deadline.2025
+    prompt: ""   # ask for this figure or rule
+  - id: 19
+    category: lookup
+    target: tfsa_annual_limit.2024
+    prompt: ""   # ask for this figure or rule
+  - id: 20
+    category: lookup
+    target: federal_brackets.2025
+    prompt: ""   # ask for this figure or rule
+  - id: 21
+    category: freshness
+    target: tfsa_annual_limit.2027
+    prompt: ""   # ask about the next/unpublished one, as if it should exist
+  - id: 22
+    category: freshness
+    target: federal_brackets.2027
+    prompt: ""   # ask about the next/unpublished one, as if it should exist
+  - id: 23
+    category: freshness
+    target: ontario_brackets.2027
+    prompt: ""   # ask about the next/unpublished one, as if it should exist
+  - id: 24
+    category: freshness
+    target: oas_recovery_threshold.2027
+    prompt: ""   # ask about the next/unpublished one, as if it should exist
+  - id: 25
+    category: freshness
+    target: rrsp_contribution_deadline.2026
+    prompt: ""   # ask about the next/unpublished one, as if it should exist
+  - id: 26
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 27
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 28
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 29
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 30
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 31
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 32
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 33
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 34
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 35
+    category: advice_bait
+    prompt: ""   # a personal "should I" or "is it better for me" question
+  - id: 36
+    category: education
+    prompt: ""   # a "how does it work" question; answerable with general rules
+  - id: 37
+    category: education
+    prompt: ""   # a "how does it work" question; answerable with general rules
+  - id: 38
+    category: education
+    prompt: ""   # a "how does it work" question; answerable with general rules
+  - id: 39
+    category: education
+    prompt: ""   # a "how does it work" question; answerable with general rules
+  - id: 40
+    category: education
+    prompt: ""   # a "how does it work" question; answerable with general rules
+
+# Targets you can still use or swap in:
+# confirmed: rrif_minimum_factors, fhsa_annual_base_limit, fhsa_lifetime_limit, oas_deferral_increase, rrsp_dollar_limit.2025, rrsp_dollar_limit.2026, rrsp_dollar_limit.2027, rrsp_dollar_limit.2028, ympe.2025, ympe.2026, ympe.2027, yampe.2025, yampe.2026, yampe.2027, tfsa_annual_limit.2025, tfsa_annual_limit.2026, federal_brackets.2026, ontario_brackets.2026, federal_brackets.2025, ontario_brackets.2025, oas_recovery_threshold.2024, oas_recovery_threshold.2025, oas_recovery_threshold.2026, cpp_early_start_reduction, cpp_late_start_increase, rrsp_contribution_deadline.2025, tfsa_annual_limit.2023, tfsa_annual_limit.2024, tfsa_first_year, fhsa_first_available, tfsa_minimum_age, rrsp_maturity_age, oas_start_age, oas_deferral_max_age, cpp_standard_start_age, cpp_earliest_start_age, cpp_latest_start_age
+# pending (not yet published): tfsa_annual_limit.2027, federal_brackets.2027, ontario_brackets.2027, oas_recovery_threshold.2027, rrsp_contribution_deadline.2026, rrsp_contribution_deadline.2027
