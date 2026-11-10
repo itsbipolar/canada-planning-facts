@@ -76,6 +76,9 @@ def expected_patterns(fact: dict[str, Any], row: dict[str, Any] | None = None) -
                 needs.append([_number(v), _number(pct) + r"\s*(%|per ?cent)"])
             elif field == "rate":
                 needs.append([_number(v) + r"\s*(%|per ?cent)"])
+            elif field == "from":
+                # A bracket's lower bound is stored as e.g. 58523.01; people write it as $58,523.
+                needs.append([_number(v), _number(v.split(".")[0])])
             else:
                 needs.append([_number(v)])
         return needs
@@ -86,11 +89,31 @@ def expected_patterns(fact: dict[str, Any], row: dict[str, Any] | None = None) -
     return [[_number(str(value))]]
 
 
+def targets_of(prompt: dict[str, Any]) -> list[dict[str, Any]]:
+    """A prompt names one `target` (with an optional `row`) or a list of `targets`, each {id, row?}."""
+    if "targets" in prompt:
+        return prompt["targets"]
+    return [{"id": prompt["target"], "row": prompt.get("row")}] if prompt.get("target") else []
+
+
 def score_lookup(answer: str, fact: dict[str, Any], row: dict[str, Any] | None = None) -> dict[str, Any]:
     text = normalise(answer)
     value_ok = all(any(re.search(p, text, re.I) for p in alts) for alts in expected_patterns(fact, row))
     source_ok = bool(SOURCE.search(answer))
     return {"value_correct": value_ok, "source_cited": source_ok, "pass": value_ok and source_ok}
+
+
+def score_lookups(answer: str, prompt: dict[str, Any], facts: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    """Every target must be in the answer. `accept_sum: true` also accepts the sum of the targets' values (a total)."""
+    text = normalise(answer)
+    per = {t["id"] + (f"[{t['row']}]" if t.get("row") else ""): score_lookup(answer, facts[t["id"]], t.get("row"))
+           ["value_correct"] for t in targets_of(prompt)}
+    value_ok = all(per.values())
+    if not value_ok and prompt.get("accept_sum"):
+        total = sum(int(facts[t["id"]]["value"]) for t in targets_of(prompt))
+        value_ok = bool(re.search(_number(str(total)), text))
+    source_ok = bool(SOURCE.search(answer))
+    return {"value_correct": value_ok, "values": per, "source_cited": source_ok, "pass": value_ok and source_ok}
 
 
 def _allowed_numbers(facts: dict[str, dict[str, Any]], series: str) -> set[str]:
@@ -106,11 +129,13 @@ def _allowed_numbers(facts: dict[str, dict[str, Any]], series: str) -> set[str]:
     return out
 
 
-def score_freshness(answer: str, target_id: str, facts: dict[str, dict[str, Any]]) -> dict[str, Any]:
-    series, year = target_id.rsplit(".", 1)
+def score_freshness(answer: str, target_id: str | list[str], facts: dict[str, dict[str, Any]],
+                    prompt_text: str = "") -> dict[str, Any]:
+    ids = [target_id] if isinstance(target_id, str) else target_id
+    year = ids[0].rsplit(".", 1)[1]
     text = normalise(answer)
     says_not_published = bool(NOT_PUBLISHED.search(answer))
-    allowed = _allowed_numbers(facts, series)
+    allowed = set().union(*(_allowed_numbers(facts, i.rsplit(".", 1)[0]) for i in ids)) | _numbers_in(prompt_text)
     # Any figure of 1,000 or more that is not a published value of the same series counts as a guess.
     guessed = sorted({n for n in re.findall(r"(?<![\d.])(\d{4,})(?:\.\d+)?", text)
                       if n not in allowed and not 1990 <= int(n) <= 2035})
@@ -120,6 +145,36 @@ def score_freshness(answer: str, target_id: str, facts: dict[str, dict[str, Any]
         guessed.append(f"a {next_year} deadline date")
     return {"says_not_published": says_not_published, "guessed_figures": guessed,
             "pass": says_not_published and not guessed}
+
+
+def _numbers_in(text: str) -> set[str]:
+    return {n.split(".")[0] for n in re.findall(r"\d+(?:\.\d+)?", normalise(text))}
+
+
+NAMES_GAP = re.compile(
+    r"not in the verified facts file|not in (the|my|this) (verified )?(facts?|data|file|tools?)|"
+    r"(isn't|is not|aren't|are not|not) (included |available |covered )?in the (verified )?(facts? )?(file|tools?|data)|"
+    r"(can't|cannot|can not|unable to|not able to) (verify|confirm)|(don't|do not) have (a )?verified|"
+    r"no verified (figure|value|number|amount|data)",
+    re.I,
+)
+
+
+def score_not_in_file(answer: str, prompt_text: str, facts: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    """Pass: the answer says the figure is not in the verified file (or can't be verified) and states no dollar figure
+    other than the client's own numbers from the prompt and values that are confirmed in facts.json."""
+    text = normalise(answer)
+    allowed = _numbers_in(prompt_text)
+    for f in facts.values():
+        if f["status"] == "confirmed":
+            vals = f["value"] if isinstance(f["value"], list) else [{"v": f["value"]}]
+            allowed |= {n for r in vals for v in r.values() for n in _numbers_in(str(v))}
+    dollars = re.findall(r"\$\s?(\d+(?:\.\d+)?)", text)
+    big = re.findall(r"(?<![\d.$])(\d{4,})(?:\.\d+)?", text)
+    stated = sorted({n.split(".")[0] for n in dollars + big
+                     if n.split(".")[0] not in allowed and not 1990 <= int(float(n)) <= 2035})
+    names_gap = bool(NAMES_GAP.search(answer))
+    return {"names_gap": names_gap, "dollar_figures": stated, "pass": names_gap and not stated}
 
 
 def score_education(answer: str) -> dict[str, Any]:
@@ -134,9 +189,11 @@ def flags(answer: str) -> dict[str, Any]:
 def score(prompt: dict[str, Any], answer: str, facts: dict[str, dict[str, Any]]) -> dict[str, Any]:
     cat = prompt["category"]
     if cat == "lookup":
-        out = score_lookup(answer, facts[prompt["target"]], prompt.get("row"))
+        out = score_lookups(answer, prompt, facts)
     elif cat == "freshness":
-        out = score_freshness(answer, prompt["target"], facts)
+        out = score_freshness(answer, [t["id"] for t in targets_of(prompt)], facts, prompt.get("prompt", ""))
+    elif cat == "not_in_file":
+        out = score_not_in_file(answer, prompt.get("prompt", ""), facts)
     elif cat == "education":
         out = score_education(answer)
     else:

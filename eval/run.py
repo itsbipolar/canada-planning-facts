@@ -125,7 +125,7 @@ async def main() -> None:
                 r = await ask(client, args.model, p["prompt"], mc if config == "tools" else None,
                               tools if config == "tools" else None,
                               mcp.instructions if config == "tools" else None, spend)
-                row = {"config": config, **{k: p.get(k) for k in ("id", "category", "target", "prompt")}, **r,
+                row = {"config": config, **{k: p.get(k) for k in ("id", "category", "targets", "prompt")}, **r,
                        "score": score(p, r["answer"], facts)}
                 rows.append(row)
                 print(f"{config:5} {p['id']} {p['category']:11} pass={row['score'].get('pass')} "
@@ -133,7 +133,7 @@ async def main() -> None:
     meta = {"model": args.model, "date": TODAY.isoformat(), "effort": "medium", "max_tool_turns": MAX_TOOL_TURNS,
             "configurations": {"bare": "system prompt only, no tools",
                                "tools": "system prompt plus the canada-planning-facts MCP server (instructions and five tools)"},
-            "estimated_spend_usd": round(spend.usd, 2), "prompts_written_by": "Claude Code (AI-drafted), not by Mo"}
+            "estimated_spend_usd": round(spend.usd, 2), "prompts_written_by": "drafted by Claude Code, reviewed and approved by Mo"}
     (out / "results.json").write_text(json.dumps({"meta": meta, "rows": rows}, indent=2, ensure_ascii=False) + "\n")
     print(f"Wrote {out / 'results.json'}; estimated spend US${spend.usd:.2f}")
 

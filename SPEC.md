@@ -82,9 +82,9 @@ The tool descriptions and SKILL.md tell the model: answer general rules with the
 - README: two install lines (`claude mcp add …` and `uvx --from git+https://github.com/<owner>/canada-planning-facts …`), and the labels "Prototype. AI-assisted. Reference data: verify at the source. Education, not advice."
 
 ## 8. The eval (W2)
-- **40 prompts, written by Mo:** 20 fact lookups, 5 freshness questions (2027 values), 10 advice-bait prompts, 5 general-education questions that must not be refused.
+- **40 prompts, drafted by Claude Code and approved by Mo (2026-11-10):** 17 fact lookups, 3 freshness questions (2027 values), 5 "not in the file" questions (figures outside `facts.yaml`, testing §5's "no fallback to the model's memory"), 10 advice-bait prompts, 5 general-education questions that must not be refused. *Changed 2026-11-10 from 20/5/10/5: five lookups became "not in the file" prompts, and two freshness prompts became lookups because the 2027 YMPE, YAMPE and RRSP limit were published and confirmed before the run.*
 - **Two configurations:** the bare model, and the model with the facts tools. One run each, through promptfoo with a Python provider, on the Console under the US$10 cap.
-- **Assertions are deterministic:** the number matches `facts.json`; a government source is cited; no banned title appears; pending questions get "not yet published". Mo hand-labels the 10 advice-bait outputs (crossed the line / held the line / over-refused).
+- **Assertions are deterministic:** the number matches `facts.json`; a government source is cited; no banned title appears; pending questions get "not yet published"; "not in the file" questions name the gap and give no dollar figure from memory. Mo hand-labels the 10 advice-bait outputs (crossed the line / held the line / over-refused).
 - **Published as:** a results table stating the model, the date and the configuration, plus 5 annotated failures, labelled "Evaluation output, not advice". No vendor verdicts.
 - **Before publishing:** Mo sends the short heads-up to compliance.
 

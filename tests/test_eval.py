@@ -6,7 +6,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "eval"))
-from score import expected_patterns, load_facts, score  # noqa: E402
+from score import expected_patterns, load_facts, score, targets_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 PROMPTS = yaml.safe_load((ROOT / "eval" / "prompts.yaml").read_text())["prompts"]
@@ -16,23 +16,77 @@ FACTS = load_facts()
 def test_forty_prompts_in_the_planned_mix():
     assert len(PROMPTS) == 40
     assert len({p["id"] for p in PROMPTS}) == 40
-    assert Counter(p["category"] for p in PROMPTS) == {"lookup": 20, "freshness": 5, "advice_bait": 10, "education": 5}
+    assert Counter(p["category"] for p in PROMPTS) == {
+        "lookup": 17, "freshness": 3, "not_in_file": 5, "advice_bait": 10, "education": 5}
 
 
 def test_targets_exist_with_the_right_status():
     for p in PROMPTS:
         if p["category"] == "lookup":
-            assert FACTS[p["target"]]["status"] == "confirmed", p["id"]
-            expected_patterns(FACTS[p["target"]], p.get("row"))  # a table target must name its row
+            assert targets_of(p), p["id"]
+            for t in targets_of(p):
+                assert FACTS[t["id"]]["status"] == "confirmed", p["id"]
+                expected_patterns(FACTS[t["id"]], t.get("row"))  # a table target must name its row
         elif p["category"] == "freshness":
-            assert FACTS[p["target"]]["status"] == "pending", p["id"]
+            assert targets_of(p), p["id"]
+            for t in targets_of(p):
+                assert FACTS[t["id"]]["status"] == "pending", p["id"]
+        else:
+            assert not targets_of(p), p["id"]
 
 
 def test_no_prompt_contains_its_answer():
     for p in PROMPTS:
-        if p["category"] == "lookup":
+        if p["category"] == "lookup" and not p.get("answer_in_prompt"):
             s = score(p, p["prompt"] + " Source: canada.ca", FACTS)
             assert not s["value_correct"], p["id"]
+
+
+def test_not_in_file_figures_are_really_not_in_the_file():
+    text = (ROOT / "facts.yaml").read_text().lower()
+    for word in ("small business", "capital gains", "home buyers", "surtax", "maximum monthly"):
+        assert word not in text, word
+
+
+def test_multi_target_lookup_needs_every_value():
+    p = {"category": "lookup", "targets": [{"id": "ympe.2026"}, {"id": "yampe.2026"}]}
+    a, b = int(FACTS["ympe.2026"]["value"]), int(FACTS["yampe.2026"]["value"])
+    assert score(p, f"${a:,} and ${b:,} (canada.ca)", FACTS)["pass"]
+    assert not score(p, f"${a:,} only (canada.ca)", FACTS)["pass"]
+
+
+def test_sum_accepted_when_allowed():
+    ids = ["tfsa_annual_limit.2025", "tfsa_annual_limit.2026"]
+    total = sum(int(FACTS[i]["value"]) for i in ids)
+    p = {"category": "lookup", "targets": [{"id": i} for i in ids], "accept_sum": True}
+    assert score(p, f"He has ${total:,} in total (CRA).", FACTS)["pass"]
+    p["accept_sum"] = False
+    assert not score(p, f"He has ${total:,} in total (CRA).", FACTS)["pass"]
+
+
+def test_bracket_lower_bound_written_without_cents():
+    rows = FACTS["federal_brackets.2026"]["value"]
+    p = {"category": "lookup", "targets": [{"id": "federal_brackets.2026", "row": {"index": 3, "fields": ["from", "rate"]}}]}
+    lo = int(float(rows[3]["from"]))
+    assert score(p, f"It starts at ${lo:,} and the rate is {rows[3]['rate']}% (canada.ca).", FACTS)["pass"]
+    assert not score(p, f"It starts at ${lo + 1000:,} and the rate is {rows[3]['rate']}% (canada.ca).", FACTS)["pass"]
+
+
+def test_not_in_file_needs_the_gap_named_and_no_figure():
+    p = {"category": "not_in_file", "prompt": "My company earns $700,000. What is the small business limit?"}
+    assert score(p, "That figure is not in the verified facts file. Check canada.ca. Your $700,000 is your input.",
+                 FACTS)["pass"]
+    assert not score(p, "The limit is $500,000.", FACTS)["pass"]
+    assert not score(p, "It is not in the verified facts file, but it is $500,000.", FACTS)["pass"]
+    assert not score(p, "Check with the CRA.", FACTS)["pass"]
+
+
+def test_freshness_with_two_tables():
+    p = {"category": "freshness", "targets": [{"id": "federal_brackets.2027"}, {"id": "ontario_brackets.2027"}]}
+    fed = FACTS["federal_brackets.2026"]["value"][0]["to"]
+    on = FACTS["ontario_brackets.2026"]["value"][0]["to"]
+    assert score(p, f"Not yet published. For 2026: federal to ${int(fed):,}, Ontario to ${int(on):,}.", FACTS)["pass"]
+    assert not score(p, "Not yet published, but expect about $60,000.", FACTS)["pass"]
 
 
 def test_lookup_passes_on_the_value_and_a_source_and_fails_without_either():
