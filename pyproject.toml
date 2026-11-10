@@ -12,6 +12,7 @@ dependencies = [
 
 [dependency-groups]
 dev = ["pytest>=8.3,<9"]
+eval = ["anthropic==2.7.0"]
 
 [project.scripts]
 canada-planning-facts = "canada_planning_facts.server:main"
