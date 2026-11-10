@@ -16,3 +16,11 @@ After `planning-lab` exists: copy `shared/facts.json` into it and build the mile
 
 **Rules that bite:** only Mo confirms facts; values come only from the official page; no "CFP"; no model names in files;
 generated files are never hand-edited (`uv run python scripts/build_skill.py`).
+
+**Eval ready to run (Opus, 2026-11-10; Mo: "do this as you see best"):** `eval/prompts.yaml` has 40 prompts AI-drafted by
+Claude Code (stated with the results). `eval/score.py` scores deterministically (tested in `tests/test_eval.py`, 51 tests
+pass). `eval/run.py` runs bare and with the MCP server in-process, effort medium, stops at an estimated US$8. The session's
+own Anthropic route cannot carry Mo's key, so the runner reads `EVAL_ANTHROPIC_API_KEY` and calls api.anthropic.com
+directly. **Mo:** add that variable in the "Portfolio build" environment settings. **Then:** run it, write
+`eval/RESULTS.md` (model, date, configuration, "Evaluation output, not advice", five annotated failures), label the ten
+advice-bait answers (draft labels marked as Claude's), then Mo sends `mo-sample-portfolio/p1-spec/compliance-heads-up.md`.
