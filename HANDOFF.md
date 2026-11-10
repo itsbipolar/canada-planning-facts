@@ -24,3 +24,10 @@ own Anthropic route cannot carry Mo's key, so the runner reads `EVAL_ANTHROPIC_A
 directly. **Mo:** add that variable in the "Portfolio build" environment settings. **Then:** run it, write
 `eval/RESULTS.md` (model, date, configuration, "Evaluation output, not advice", five annotated failures), label the ten
 advice-bait answers (draft labels marked as Claude's), then Mo sends `mo-sample-portfolio/p1-spec/compliance-heads-up.md`.
+
+**2026-11-10, eval run once (branch `claude/quirky-lovelace-wgxra9`):** Mo's approved prompts in `eval/prompts.yaml`
+(17 lookup / 3 freshness / 5 not in file / 10 advice / 5 education); est. spend US$3.06. Results are NOT in this public
+repo (`eval/results/` is ignored) until the compliance heads-up: a copy is in mo-sample-portfolio
+`p1-spec/eval/results-2026-11-10/`. **Fix next:** the tools only take exact ids, and the model guessed wrong ids for RRIF
+factors, CPP start adjustments and start ages, then said "not in the file". Consider a `search_facts`/`list_facts` tool
+or listing ids in the server instructions; then a re-run. Not yet: RESULTS.md, Mo's advice labels.
