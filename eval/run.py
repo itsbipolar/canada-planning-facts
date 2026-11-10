@@ -1,6 +1,10 @@
 """Run the forty prompts in two configurations and write the results.
 
-    ANTHROPIC_API_KEY=... uv run --group eval python eval/run.py --model <id> --in-price 4 --out-price 20
+    uv run --group eval python eval/run.py --model <id> --in-price <US$/M in> --out-price <US$/M out>
+
+The key is read from EVAL_ANTHROPIC_API_KEY (Mo's Console key, set in the environment's settings, never in the repo).
+The runner calls https://api.anthropic.com directly and ignores ANTHROPIC_API_KEY and ANTHROPIC_BASE_URL, so the run is
+billed to that Console workspace and its cap, never to anything else this machine is signed in to.
 
 Configurations:
   bare   the model with a one-line system prompt and today's date; no tools.
@@ -104,7 +108,11 @@ async def main() -> None:
     if args.only:
         prompts = [p for p in prompts if p["id"] in args.only]
     facts = load_facts()
-    client = anthropic.Anthropic()
+    import os
+    key = os.environ.get("EVAL_ANTHROPIC_API_KEY")
+    if not key:
+        raise SystemExit("EVAL_ANTHROPIC_API_KEY is not set: add the Console key in the environment's settings.")
+    client = anthropic.Anthropic(api_key=key, base_url="https://api.anthropic.com")
     spend = Spend(args.in_price, args.out_price, args.cap)
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
