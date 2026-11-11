@@ -921,3 +921,143 @@ facts:
     verified_by: MEC
     verified_on: 2026-11-10
     notes: "Source given by Mo. The budget pages say 'Budget Day' without printing its date in the text; this is the page's own date line, which matches the page metadata datePublished 2026-11-05. Used by P4 to place the Growth Incentive start."
+  - id: t1_filing_deadline.2026
+    series: t1_filing_deadline
+    title: Income tax filing deadline for most individuals, for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: date
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    authority: official_publication
+    as_of: 2026-11-11
+    status: pending
+    notes: The page (Page details 2026-09-17) lists only the dates for 2025 taxes as of 2026-11-11. Used by P5.
+  - id: t1_self_employed_filing_deadline.2026
+    series: t1_self_employed_filing_deadline
+    title: Income tax filing deadline for self-employed individuals, for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: date
+    value: 2027-06-15
+    source_url: https://www.canada.ca/en/services/taxes/resources-for-small-and-medium-businesses/2026-tax-deadlines-canadian-businesses-self-employed-individuals.html
+    source_quote: 'Deadline for Filing Income Tax and Benefit Returns: June 15, 2027'
+    authority: official_publication
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page '2027 Tax deadlines for Canadian businesses and self-employed individuals' (Page details 2026-10-16), under 'Self-Employed Individuals'. Also applies to their spouses or common-law partners per CRA's individuals page for earlier years. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
+  - id: t1_balance_due_date.2026
+    series: t1_balance_due_date
+    title: Balance-due date for individuals' income tax, for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2026
+    unit: date
+    value: 2027-04-30
+    source_url: https://www.canada.ca/en/services/taxes/resources-for-small-and-medium-businesses/2026-tax-deadlines-canadian-businesses-self-employed-individuals.html
+    source_quote: 'Payment Deadline: April 30, 2027, for balances owing'
+    authority: official_publication
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Same page, under 'Self-Employed Individuals' (the balance is due on this date even when filing later). Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
+  - id: individual_instalment_due_dates
+    series: individual_instalment_due_dates
+    title: Tax instalment due dates for individuals (the same four dates each year)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: March 15, June 15, September 15, December 15
+    source_url: https://www.canada.ca/en/services/taxes/resources-for-small-and-medium-businesses/2026-tax-deadlines-canadian-businesses-self-employed-individuals.html
+    source_quote: 'Instalment Payments: due on March 15, June 15, September 15, December 15 in 2027'
+    authority: official_publication
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Same page, under 'Self-Employed Individuals'. A date on a weekend or CRA-recognized holiday moves to the next business day (same page). Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
+  - id: t3_filing_deadline_rule
+    series: t3_filing_deadline_rule
+    title: When a trust's T3 return is due
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: no later than 90 days after the trust's tax year-end
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/trust-administrators/t3-return/filing-trust-return/when-file.html
+    source_quote: The T3 return must be filed no later than 90 days after the trust’s tax year-end.
+    authority: official_publication
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page 'When to file - Filing a trust's T3 return' (Page details 2026-04-01). The same page says most trusts must use a December 31 tax year-end. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
+  - id: t2_filing_deadline_rule
+    series: t2_filing_deadline_rule
+    title: When a corporation's T2 return is due
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: within six months of the end of each tax year
+    source_url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html
+    source_quote: File your return within six months of the end of each tax year.
+    authority: official_publication
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: T4012 T2 Corporation Income Tax Guide, 'Before you start', under 'When to file your return'. A year-end on the last day of a month files by the last day of the sixth month after. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
+  - id: trust_deemed_disposition_years
+    series: trust_deemed_disposition_years
+    title: Years after a trust's creation at which it is deemed to dispose of its property (Income Tax Act 104(4)(b))
+    kind: fixed
+    jurisdiction: federal
+    unit: years
+    value: '21'
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-104.html
+    source_quote: (b) the day that is 21 years after the latest of
+    authority: statute
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Subsection 104(4) opens 'Every trust is, at the end of each of the following days, deemed to have disposed of each property of the trust'; (b)(ii) is 'the day on which the trust was created'. Exempt property and some trusts are excluded. Act current to 2026-10-19. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
+  - id: t1_filing_deadline.2027
+    series: t1_filing_deadline
+    title: Income tax filing deadline for most individuals, for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: date
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html
+    authority: official_publication
+    as_of: 2026-11-11
+    status: pending
+    notes: Not published as of 2026-11-11.
+  - id: t1_self_employed_filing_deadline.2027
+    series: t1_self_employed_filing_deadline
+    title: Income tax filing deadline for self-employed individuals, for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: date
+    source_url: https://www.canada.ca/en/services/taxes/resources-for-small-and-medium-businesses/2026-tax-deadlines-canadian-businesses-self-employed-individuals.html
+    authority: official_publication
+    as_of: 2026-11-11
+    status: pending
+    notes: Not published as of 2026-11-11.
+  - id: t1_balance_due_date.2027
+    series: t1_balance_due_date
+    title: Balance-due date for individuals' income tax, for the tax year
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2027
+    unit: date
+    source_url: https://www.canada.ca/en/services/taxes/resources-for-small-and-medium-businesses/2026-tax-deadlines-canadian-businesses-self-employed-individuals.html
+    authority: official_publication
+    as_of: 2026-11-11
+    status: pending
+    notes: Not published as of 2026-11-11.
