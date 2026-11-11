@@ -16,3 +16,5 @@ unverified, for Mo to confirm: t1_self_employed_filing_deadline.2026 (June 15, 2
 individual_instalment_due_dates (fixed: Mar 15, Jun 15, Sep 15, Dec 15), t3_filing_deadline_rule (90 days), t2_filing_deadline_rule
 (six months), trust_deemed_disposition_years (21, ITA 104(4)(b)). Pending: t1_filing_deadline.2026 and the three T1 series for 2027.
 Entry cap raised to 75 (68 now; flagged to Mo). The staleness test fails until the two 2026 dates are confirmed: merge to main after.
+**P5 facts confirmed (Mo, 2026-11-11: "confirmed for the 5b facts"):** the six drafts are confirmed (verified_by MEC); merged to main.
+62 tests pass, including staleness.

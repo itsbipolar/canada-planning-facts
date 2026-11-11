@@ -945,8 +945,10 @@ facts:
     source_quote: 'Deadline for Filing Income Tax and Benefit Returns: June 15, 2027'
     authority: official_publication
     as_of: 2026-11-11
-    status: unverified
-    notes: Page '2027 Tax deadlines for Canadian businesses and self-employed individuals' (Page details 2026-10-16), under 'Self-Employed Individuals'. Also applies to their spouses or common-law partners per CRA's individuals page for earlier years. Drafted by Claude for Mo to check. Used by P5.
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page '2027 Tax deadlines for Canadian businesses and self-employed individuals' (Page details 2026-10-16), under 'Self-Employed Individuals'. Also applies to their spouses or common-law partners per CRA's individuals page for earlier years. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
   - id: t1_balance_due_date.2026
     series: t1_balance_due_date
     title: Balance-due date for individuals' income tax, for the tax year
@@ -959,8 +961,10 @@ facts:
     source_quote: 'Payment Deadline: April 30, 2027, for balances owing'
     authority: official_publication
     as_of: 2026-11-11
-    status: unverified
-    notes: Same page, under 'Self-Employed Individuals' (the balance is due on this date even when filing later). Drafted by Claude for Mo to check. Used by P5.
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Same page, under 'Self-Employed Individuals' (the balance is due on this date even when filing later). Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
   - id: individual_instalment_due_dates
     series: individual_instalment_due_dates
     title: Tax instalment due dates for individuals (the same four dates each year)
@@ -972,8 +976,10 @@ facts:
     source_quote: 'Instalment Payments: due on March 15, June 15, September 15, December 15 in 2027'
     authority: official_publication
     as_of: 2026-11-11
-    status: unverified
-    notes: Same page, under 'Self-Employed Individuals'. A date on a weekend or CRA-recognized holiday moves to the next business day (same page). Drafted by Claude for Mo to check. Used by P5.
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Same page, under 'Self-Employed Individuals'. A date on a weekend or CRA-recognized holiday moves to the next business day (same page). Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
   - id: t3_filing_deadline_rule
     series: t3_filing_deadline_rule
     title: When a trust's T3 return is due
@@ -985,8 +991,10 @@ facts:
     source_quote: The T3 return must be filed no later than 90 days after the trust’s tax year-end.
     authority: official_publication
     as_of: 2026-11-11
-    status: unverified
-    notes: Page 'When to file - Filing a trust's T3 return' (Page details 2026-04-01). The same page says most trusts must use a December 31 tax year-end. Drafted by Claude for Mo to check. Used by P5.
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page 'When to file - Filing a trust's T3 return' (Page details 2026-04-01). The same page says most trusts must use a December 31 tax year-end. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
   - id: t2_filing_deadline_rule
     series: t2_filing_deadline_rule
     title: When a corporation's T2 return is due
@@ -998,8 +1006,10 @@ facts:
     source_quote: File your return within six months of the end of each tax year.
     authority: official_publication
     as_of: 2026-11-11
-    status: unverified
-    notes: T4012 T2 Corporation Income Tax Guide, 'Before you start', under 'When to file your return'. A year-end on the last day of a month files by the last day of the sixth month after. Drafted by Claude for Mo to check. Used by P5.
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: T4012 T2 Corporation Income Tax Guide, 'Before you start', under 'When to file your return'. A year-end on the last day of a month files by the last day of the sixth month after. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
   - id: trust_deemed_disposition_years
     series: trust_deemed_disposition_years
     title: Years after a trust's creation at which it is deemed to dispose of its property (Income Tax Act 104(4)(b))
@@ -1011,8 +1021,10 @@ facts:
     source_quote: (b) the day that is 21 years after the latest of
     authority: statute
     as_of: 2026-11-11
-    status: unverified
-    notes: Subsection 104(4) opens 'Every trust is, at the end of each of the following days, deemed to have disposed of each property of the trust'; (b)(ii) is 'the day on which the trust was created'. Exempt property and some trusts are excluded. Act current to 2026-10-19. Drafted by Claude for Mo to check. Used by P5.
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Subsection 104(4) opens 'Every trust is, at the end of each of the following days, deemed to have disposed of each property of the trust'; (b)(ii) is 'the day on which the trust was created'. Exempt property and some trusts are excluded. Act current to 2026-10-19. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5.
   - id: t1_filing_deadline.2027
     series: t1_filing_deadline
     title: Income tax filing deadline for most individuals, for the tax year
