@@ -11,3 +11,8 @@ The CGI entry avoids the words "capital gains" so the eval's not-in-file questio
 **Caveats for Mo:** OAS, RRSP and CPP give a year, not a day. Justice Laws' Acts do not state the OAS or RRSP start.
 **Mo next:** earlier milestone facts still await him.
 Create the public repo `planning-lab` (MIT) and turn on push protection. Console key and compliance heads-up before the eval (W2).
+**P5 facts draft (2026-11-11, branch `p5-facts-draft`, not main):** six entries drafted from official pages with exact quotes, status
+unverified, for Mo to confirm: t1_self_employed_filing_deadline.2026 (June 15, 2027), t1_balance_due_date.2026 (April 30, 2027),
+individual_instalment_due_dates (fixed: Mar 15, Jun 15, Sep 15, Dec 15), t3_filing_deadline_rule (90 days), t2_filing_deadline_rule
+(six months), trust_deemed_disposition_years (21, ITA 104(4)(b)). Pending: t1_filing_deadline.2026 and the three T1 series for 2027.
+Entry cap raised to 75 (68 now; flagged to Mo). The staleness test fails until the two 2026 dates are confirmed: merge to main after.

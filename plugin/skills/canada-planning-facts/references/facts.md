@@ -62,3 +62,7 @@ Only confirmed values are listed as facts. Pending means not yet published.
 - `budget2026_cgi_limit`: Canada Growth Incentive exemption limit, per individual per business (Budget 2026 proposal): 15000000 (CAD). Source: https://budget.canada.ca/2026/report-rapport/tm-mf-en.html (read 2026-11-10).
 - `budget2026_cgi_issue_window`: Which shares the proposed Canada Growth Incentive exemption would cover (Budget 2026 proposal): issued on or after Budget Day and before 2037 (text). Source: https://budget.canada.ca/2026/report-rapport/tm-mf-en.html (read 2026-11-10).
 - `budget2026_budget_day`: Date Budget 2026 was presented (Budget Day): 2026-11-05 (date). Source: https://budget.canada.ca/2026/report-rapport/toc-tdm-en.html (read 2026-11-10).
+- `t1_filing_deadline.2026`: Income tax filing deadline for most individuals, for the tax year: **not yet published** as of the last check (2026-11-11).
+- `t1_filing_deadline.2027`: Income tax filing deadline for most individuals, for the tax year: **not yet published** as of the last check (2026-11-11).
+- `t1_self_employed_filing_deadline.2027`: Income tax filing deadline for self-employed individuals, for the tax year: **not yet published** as of the last check (2026-11-11).
+- `t1_balance_due_date.2027`: Balance-due date for individuals' income tax, for the tax year: **not yet published** as of the last check (2026-11-11).

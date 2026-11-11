@@ -1013,6 +1013,62 @@
       "authority": "official_publication",
       "as_of": "2026-11-10",
       "status": "confirmed"
+    },
+    {
+      "id": "t1_filing_deadline.2026",
+      "series": "t1_filing_deadline",
+      "title": "Income tax filing deadline for most individuals, for the tax year",
+      "kind": "yearly",
+      "jurisdiction": "federal",
+      "tax_year": 2026,
+      "value": null,
+      "unit": "date",
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+      "authority": "official_publication",
+      "as_of": "2026-11-11",
+      "status": "pending"
+    },
+    {
+      "id": "t1_filing_deadline.2027",
+      "series": "t1_filing_deadline",
+      "title": "Income tax filing deadline for most individuals, for the tax year",
+      "kind": "yearly",
+      "jurisdiction": "federal",
+      "tax_year": 2027,
+      "value": null,
+      "unit": "date",
+      "source_url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+      "authority": "official_publication",
+      "as_of": "2026-11-11",
+      "status": "pending"
+    },
+    {
+      "id": "t1_self_employed_filing_deadline.2027",
+      "series": "t1_self_employed_filing_deadline",
+      "title": "Income tax filing deadline for self-employed individuals, for the tax year",
+      "kind": "yearly",
+      "jurisdiction": "federal",
+      "tax_year": 2027,
+      "value": null,
+      "unit": "date",
+      "source_url": "https://www.canada.ca/en/services/taxes/resources-for-small-and-medium-businesses/2026-tax-deadlines-canadian-businesses-self-employed-individuals.html",
+      "authority": "official_publication",
+      "as_of": "2026-11-11",
+      "status": "pending"
+    },
+    {
+      "id": "t1_balance_due_date.2027",
+      "series": "t1_balance_due_date",
+      "title": "Balance-due date for individuals' income tax, for the tax year",
+      "kind": "yearly",
+      "jurisdiction": "federal",
+      "tax_year": 2027,
+      "value": null,
+      "unit": "date",
+      "source_url": "https://www.canada.ca/en/services/taxes/resources-for-small-and-medium-businesses/2026-tax-deadlines-canadian-businesses-self-employed-individuals.html",
+      "authority": "official_publication",
+      "as_of": "2026-11-11",
+      "status": "pending"
     }
   ]
 }
