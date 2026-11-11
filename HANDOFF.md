@@ -18,3 +18,8 @@ individual_instalment_due_dates (fixed: Mar 15, Jun 15, Sep 15, Dec 15), t3_fili
 Entry cap raised to 75 (68 now; flagged to Mo). The staleness test fails until the two 2026 dates are confirmed: merge to main after.
 **P5 facts confirmed (Mo, 2026-11-11: "confirmed for the 5b facts"):** the six drafts are confirmed (verified_by MEC); merged to main.
 62 tests pass, including staleness.
+**P5b facts draft (2026-11-11, branch `p5b-facts-draft`):** five rules for the planning calendar's year-end rows, unverified for Mo:
+superficial_loss_period, fhsa_contribution_period, rrif_minimum_payment_timing, donations_claim_year, cesg_basic_rate (73 entries).
+Not found on an allowed source: whether a share sale counts on the trade date or the settlement date (CRA's T4037 page refused a
+direct download); left out.
+**P5b facts confirmed (Mo, 2026-11-11):** the five drafts are confirmed and merged to main.

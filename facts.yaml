@@ -1061,3 +1061,78 @@ facts:
     as_of: 2026-11-11
     status: pending
     notes: Not published as of 2026-11-11.
+  - id: superficial_loss_period
+    series: superficial_loss_period
+    title: The period around a sale in which buying the same property back makes the loss superficial
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: 30 calendar days before the sale to 30 calendar days after the sale
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains/capital-losses-deductions.html
+    source_quote: during the period starting 30 calendar days before the sale and ending 30 calendar days after the sale
+    authority: cra_position
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page 'Capital losses' (Page details 2026-02-05). The full test has two conditions (the same or identical property bought by you or an affiliated person in that period, and still owned 30 calendar days after the sale). Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5b.
+  - id: fhsa_contribution_period
+    series: fhsa_contribution_period
+    title: FHSA contribution period (contributions are deductible for the calendar year they are made in)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: January 1 to December 31 of the same year
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/first-home-savings-account/tax-deductions-fhsa-contributions.html
+    source_quote: The contribution period for FHSAs is from January 1 to December 31 of the same year.
+    authority: cra_position
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page 'Tax deductions for FHSA contributions' (Page details 2026-04-15). The same page says contributions in the first 60 days of a year cannot be deducted for the previous year, unlike RRSP contributions. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5b.
+  - id: rrif_minimum_payment_timing
+    series: rrif_minimum_payment_timing
+    title: When the first RRIF minimum amount must be paid
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: in the year following the year the RRIF is entered into
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-retirement-income-fund-rrif.html
+    source_quote: The minimum amount must be paid to you in the year following the year the RRIF is entered into.
+    authority: cra_position
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page 'Registered Retirement Income Fund (RRIF)' (Page details 2026-01-06). The minimum is figured each year from the factors in rrif_minimum_factors. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5b.
+  - id: donations_claim_year
+    series: donations_claim_year
+    title: Donations claimed on a year's return are the ones made in that year (unused amounts can be carried forward)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: donations and gifts made in the year
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-34900-donations-gifts/how-claim.html
+    source_quote: You may choose to claim all or part of the eligible amount of donations and gifts you made in 2025 on your tax return.
+    authority: cra_position
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page 'How to claim - Donations and gifts' for tax year 2025 (Page details 2026-07-06). The same page allows unused amounts to be carried forward up to 5 years (10 for ecologically sensitive land). Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5b.
+  - id: cesg_basic_rate
+    series: cesg_basic_rate
+    title: Basic Canada Education Savings Grant, figured on each year's contributions
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: 20% of annual personal contributions
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/canada-education-savings-programs-cesp/canada-education-savings-grant-cesg.html
+    source_quote: ESDC pays an amount of Canada Education Savings Grant (basic CESG) of 20% of annual personal contributions
+    authority: official_publication
+    as_of: 2026-11-11
+    status: confirmed
+    verified_by: MEC
+    verified_on: 2026-11-11
+    notes: Page 'Canada Education Savings Grant (CESG)' (Page details 2026-10-29). The sentence goes on to a maximum per beneficiary and a higher amount with unused grant room. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5b.
