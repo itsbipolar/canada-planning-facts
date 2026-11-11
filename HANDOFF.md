@@ -22,3 +22,4 @@ Entry cap raised to 75 (68 now; flagged to Mo). The staleness test fails until t
 superficial_loss_period, fhsa_contribution_period, rrif_minimum_payment_timing, donations_claim_year, cesg_basic_rate (73 entries).
 Not found on an allowed source: whether a share sale counts on the trade date or the settlement date (CRA's T4037 page refused a
 direct download); left out.
+**P5b facts confirmed (Mo, 2026-11-11):** the five drafts are confirmed and merged to main.
