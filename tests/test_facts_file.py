@@ -3,9 +3,9 @@ from canada_planning_facts.facts import load_facts, servable
 from canada_planning_facts.schema import Fact
 
 
-def test_facts_file_loads_and_has_35_to_75_entries():
+def test_facts_file_loads_and_has_35_to_100_entries():
     facts = load_facts()
-    assert 35 <= len(facts.facts) <= 75
+    assert 35 <= len(facts.facts) <= 100
 
 
 def test_every_series_has_a_2027_entry_when_yearly():

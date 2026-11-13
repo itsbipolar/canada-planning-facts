@@ -1136,3 +1136,257 @@ facts:
     verified_by: MEC
     verified_on: 2026-11-11
     notes: Page 'Canada Education Savings Grant (CESG)' (Page details 2026-10-29). The sentence goes on to a maximum per beneficiary and a higher amount with unused grant room. Drafted by Claude; confirmed by Mo 2026-11-11. Used by P5b.
+  - id: tfsa_annual_limit.2009
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2009
+    unit: CAD
+    value: "5000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2009 to 2012 | $ 5,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2010
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2010
+    unit: CAD
+    value: "5000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2009 to 2012 | $ 5,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2011
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2011
+    unit: CAD
+    value: "5000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2009 to 2012 | $ 5,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2012
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2012
+    unit: CAD
+    value: "5000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2009 to 2012 | $ 5,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2013
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2013
+    unit: CAD
+    value: "5500"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2013 and 2014 | $ 5,500"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2014
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2014
+    unit: CAD
+    value: "5500"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2013 and 2014 | $ 5,500"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2015
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2015
+    unit: CAD
+    value: "10000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2015 | $10,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2016
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2016
+    unit: CAD
+    value: "5500"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2016 to 2018 | $ 5,500"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2017
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2017
+    unit: CAD
+    value: "5500"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2016 to 2018 | $ 5,500"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2018
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2018
+    unit: CAD
+    value: "5500"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2016 to 2018 | $ 5,500"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2019
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2019
+    unit: CAD
+    value: "6000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2019 to 2022 | $ 6,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2020
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2020
+    unit: CAD
+    value: "6000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2019 to 2022 | $ 6,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2021
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2021
+    unit: CAD
+    value: "6000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2019 to 2022 | $ 6,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: tfsa_annual_limit.2022
+    series: tfsa_annual_limit
+    title: TFSA dollar limit
+    kind: yearly
+    jurisdiction: federal
+    tax_year: 2022
+    unit: CAD
+    value: "6000"
+    source_url: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributing/before.html
+    source_quote: "2019 to 2022 | $ 6,000"
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Row of the 'TFSA dollar limits' table (page details 2026-02-20), which groups years. Mo to review before the site is advertised."
+  - id: oas_age75_increase
+    series: oas_age75_increase
+    title: OAS pension increase at age 75
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "10"
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/payments.html
+    source_quote: "In July 2022, the Old Age Security pension was permanently increased by 10% for seniors aged 75 and over."
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "Page details 2026-09-29. Mo to review before the site is advertised."
+  - id: oas_recovery_rate
+    series: oas_recovery_rate
+    title: OAS recovery tax rate on net income above the threshold
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "15"
+    source_url: https://www.canada.ca/en/services/benefits/publicpensions/old-age-security/recovery-tax.html
+    source_quote: "You must repay 15% of that amount."
+    authority: official_publication
+    as_of: 2026-11-13
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-13
+    notes: "'That amount' is how much higher net income is than the threshold (the sentence before). Page details 2026-09-29. Mo to review before the site is advertised."
