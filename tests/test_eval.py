@@ -44,8 +44,19 @@ def test_no_prompt_contains_its_answer():
 
 def test_not_in_file_figures_are_really_not_in_the_file():
     text = (ROOT / "facts.yaml").read_text().lower()
-    for word in ("small business", "capital gains", "home buyers", "surtax", "maximum monthly"):
+    # gap-02 asks for the lifetime capital gains exemption; the inclusion rate (added 2026-11-15) is a different figure.
+    for word in ("small business", "capital gains exemption", "home buyers", "maximum monthly"):
         assert word not in text, word
+
+
+def test_surtax_was_not_in_the_file_at_the_recorded_run():
+    # gap-04 (Ontario surtax) held at the 2026-11-10 run. The surtax was added on 2026-11-15 for the estate-freeze
+    # tool, so gap-04 must be replaced (Mo's call) before any new run; this keeps the recorded run's claim true.
+    from datetime import date
+
+    from canada_planning_facts.facts import load_facts
+    surtax = [f for f in load_facts().facts if "surtax" in f.series]
+    assert surtax and all(f.as_of > date(2026, 11, 10) for f in surtax)
 
 
 def test_multi_target_lookup_needs_every_value():

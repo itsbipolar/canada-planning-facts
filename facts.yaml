@@ -1390,3 +1390,213 @@ facts:
     verified_by: "Claude, on Mo's standing OK of 2026-11-12"
     verified_on: 2026-11-13
     notes: "'That amount' is how much higher net income is than the threshold (the sentence before). Page details 2026-09-29. Mo to review before the site is advertised."
+  - id: capital_gains_inclusion_rate
+    series: capital_gains_inclusion_rate
+    title: Share of a capital gain that is taxable (Income Tax Act 38(a))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "50"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-38.html
+    source_quote: "(a) subject to paragraphs (a.1) to (a.3), a taxpayer’s taxable capital gain for a taxation year from the disposition of any property is ½ of the taxpayer’s capital gain for the year from the disposition of the property;"
+    authority: statute
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "The Act says ½; stored as 50 percent. Paragraphs (a.1) to (a.3) set other rates for some gifts of property. Act current to 2026-10-19. Used by the estate-freeze tool. Mo to review before the site is advertised."
+  - id: ontario_surtax.2026
+    series: ontario_surtax
+    title: Ontario surtax on basic Ontario tax (each row's rate applies to basic Ontario tax above its 'from' amount; the rows add together)
+    kind: yearly
+    jurisdiction: "ON"
+    tax_year: 2026
+    unit: percent
+    value:
+      - {from: "5818", rate: "20"}
+      - {from: "7446", rate: "36"}
+    source_url: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4127-payroll-deductions-formulas/t4127-jan/t4127-jan-payroll-deductions-formulas-computer-programs.html
+    source_quote: "V1 = (0.20 × (T4 – $5,818)) + (0.36 × (T4 – $7,446))"
+    authority: official_publication
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "T4127 Payroll Deductions Formulas, 122nd edition, effective January 1, 2026, Step 5 (Ontario). V1 is the Ontario surtax and T4 the basic Ontario tax; the lines before read 'Where T4 ≤ $5,818 V1 = $0' and 'Where $5,818 < T4 ≤ $7,446 V1 = 0.20 × (T4 – $5,818)'. Table 8.2's ON row also gives 5,818 / 0.20 and 7,446 / 0.36. Not marginal brackets: above $7,446 both rows apply. Read through a page reader (canada.ca refuses direct download here); whitespace in the formula collapsed. Mo to review before the site is advertised."
+  - id: ontario_surtax.2027
+    series: ontario_surtax
+    title: Ontario surtax on basic Ontario tax (each row's rate applies to basic Ontario tax above its 'from' amount; the rows add together)
+    kind: yearly
+    jurisdiction: "ON"
+    tax_year: 2027
+    unit: percent
+    source_url: https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4127-payroll-deductions-formulas.html
+    authority: official_publication
+    as_of: 2026-11-15
+    status: pending
+    notes: "The thresholds are indexed each year; the 2027 edition of T4127 (January 2027) is not published as of 2026-11-15."
+  - id: ontario_estate_admin_tax_rate
+    series: ontario_estate_admin_tax_rate
+    title: Ontario Estate Administration Tax, dollars per $1,000 (or part) of estate value over $50,000 (estate certificates applied for on or after January 1, 2020)
+    kind: fixed
+    jurisdiction: "ON"
+    unit: CAD
+    value: "15"
+    source_url: https://www.ontario.ca/page/estate-administration-tax
+    source_quote: "For estates valued over $50,000, the Estate Administration Tax will be calculated as $15 for every $1,000 (or part thereof) of the value of the estate."
+    authority: official_publication
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "The page's worked example charges '$0 per $1,000 for the first $50,000 of the estate' and '$15 per $1,000 for the remaining' value, and says 'The estate value is rounded up to the nearest thousand.' Page updated June 24, 2026. The Act on ontario.ca/laws needs JavaScript and could not be read here, so this is the Ontario government's page, not the statute. Mo to review before the site is advertised."
+  - id: ontario_estate_admin_tax_exemption
+    series: ontario_estate_admin_tax_exemption
+    title: Ontario estate value at or below which no Estate Administration Tax is payable (estate certificates applied for on or after January 1, 2020)
+    kind: fixed
+    jurisdiction: "ON"
+    unit: CAD
+    value: "50000"
+    source_url: https://www.ontario.ca/page/estate-administration-tax
+    source_quote: "You do not need to pay Estate Administration Tax if the value of the estate is $50,000 or less."
+    authority: official_publication
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "Under the heading 'If you apply for an estate certificate on or after January 1, 2020'. An Estate Information Return is still due. Page updated June 24, 2026. Mo to review before the site is advertised."
+  - id: dividend_refund_rate
+    series: dividend_refund_rate
+    title: Dividend refund to a private corporation, percent of taxable dividends paid, up to its refundable dividend tax on hand (Income Tax Act 129(1)(a))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "38.3333333333"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html
+    source_quote: "(A) 38 1/3% of the total of all eligible dividends paid by it in the year, and"
+    authority: statute
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "38 1/3% exactly, stored to 10 decimal places. The same rate applies to other taxable dividends in 129(1)(a)(ii): '(I) 38 1/3% of the total of all taxable dividends (other than eligible dividends) paid by it in the year, and'. Each refund is the lesser of that amount and the matching refundable dividend tax on hand. Act current to 2026-10-19. Mo to review before the site is advertised."
+  - id: part_iv_tax_rate
+    series: part_iv_tax_rate
+    title: Part IV tax on dividends a private corporation receives from corporations not connected with it (Income Tax Act 186(1)(a))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "38.3333333333"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-186.html
+    source_quote: "(a) 38 1/3% of all assessable dividends received by the particular corporation in the year from corporations other than payer corporations connected with it, and"
+    authority: statute
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "38 1/3% exactly, stored to 10 decimal places. Part IV tax on eligible dividends is added to eligible refundable dividend tax on hand (129(4)). Act current to 2026-10-19. Mo to review before the site is advertised."
+  - id: refundable_investment_income_rate
+    series: refundable_investment_income_rate
+    title: Share of a CCPC's aggregate investment income added to its non-eligible refundable dividend tax on hand (Income Tax Act 129(4))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "30.6666666667"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-129.html
+    source_quote: "A is 30 2/3% of the corporation’s aggregate investment income for the year, and"
+    authority: statute
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "30 2/3% exactly, stored to 10 decimal places. From the definition 'non-eligible refundable dividend tax on hand' in 129(4), paragraph (a)(i), for a corporation that 'was a Canadian-controlled private corporation throughout the year'; B in that formula reduces it for foreign tax credits, and (a) takes the least of three amounts. Act current to 2026-10-19. Mo to review before the site is advertised."
+  - id: federal_corporate_basic_rate
+    series: federal_corporate_basic_rate
+    title: Federal basic corporate income tax rate on taxable income (Income Tax Act 123(1)(a))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "38"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.html
+    source_quote: "(a) 38% of its amount taxable for the year."
+    authority: statute
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "Before the 10% provincial abatement (124(1)) and other deductions. For a CCPC, the general rate reduction in 123.4 does not reach aggregate investment income: 'full rate taxable income' (123.4(1), paragraph (b)(iii)) subtracts 'the corporation’s aggregate investment income'. Act current to 2026-10-19. Mo to review before the site is advertised."
+  - id: federal_corporate_abatement
+    series: federal_corporate_abatement
+    title: Federal tax abatement for corporate taxable income earned in a province (Income Tax Act 124(1))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "10"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-124.html
+    source_quote: "124 (1) There may be deducted from the tax otherwise payable by a corporation under this Part for a taxation year an amount equal to 10% of the corporation’s taxable income earned in the year in a province."
+    authority: statute
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "Act current to 2026-10-19. Mo to review before the site is advertised."
+  - id: ccpc_additional_refundable_tax_rate
+    series: ccpc_additional_refundable_tax_rate
+    title: Additional refundable tax on a CCPC's aggregate investment income (Income Tax Act 123.3)
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "10.6666666667"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.3.html
+    source_quote: "an amount equal to 10 2/3% of the lesser of (a) the corporation’s aggregate investment income for the year (within the meaning assigned by subsection 129(4)), and"
+    authority: statute
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "10 2/3% exactly, stored to 10 decimal places. Applies to a corporation that is a Canadian-controlled private corporation throughout the year (or a substantive CCPC at any time in it); the lesser-of test's other limb, (b), is taxable income above the amounts in 125(1)(a) to (c). Act current to 2026-10-19. Mo to review before the site is advertised."
+  - id: ontario_corporate_general_rate
+    series: ontario_corporate_general_rate
+    title: Ontario general corporate income tax rate
+    kind: fixed
+    jurisdiction: "ON"
+    unit: percent
+    value: "11.5"
+    source_url: https://www.ontario.ca/document/corporations-tax/corporate-income-tax
+    source_quote: "The Ontario General corporate income tax rate is currently 11.5%."
+    authority: official_publication
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "The page's table: 'July 1, 2011 onwards 11.5%'. Its lower rate applies only to active business income, so investment income is taxed at this rate. Page updated April 27, 2026. Mo to review before the site is advertised."
+  - id: life_expectancy_age70_male
+    series: life_expectancy_age70_male
+    title: Life expectancy at age 70, males, Canada, three-year estimate 2022 to 2024 (years remaining)
+    kind: fixed
+    jurisdiction: federal
+    unit: years
+    value: "15.63"
+    source_url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310011401
+    source_quote: '"2022/2024","Canada","2021A000011124","70 years","Males","Life expectancy (in years) at age x (ex)","Number","223","units","0","v123325619","1.71.2.8","15.63","","","","2"'
+    authority: official_publication
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "Statistics Canada table 13-10-0114-01 (release date 2026-01-13); 2022/2024 is the latest period. The table page draws its rows with JavaScript, so the quote is the row from the table's own CSV download (https://www150.statcan.gc.ca/n1/tbl/csv/13100114-eng.zip), vector v123325619. A period average for the whole population, not a forecast for any person. Mo to review before the site is advertised."
+  - id: life_expectancy_age70_female
+    series: life_expectancy_age70_female
+    title: Life expectancy at age 70, females, Canada, three-year estimate 2022 to 2024 (years remaining)
+    kind: fixed
+    jurisdiction: federal
+    unit: years
+    value: "18.02"
+    source_url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310011401
+    source_quote: '"2022/2024","Canada","2021A000011124","70 years","Females","Life expectancy (in years) at age x (ex)","Number","223","units","0","v123325620","1.71.3.8","18.02","","","","2"'
+    authority: official_publication
+    as_of: 2026-11-15
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-15
+    notes: "Statistics Canada table 13-10-0114-01 (release date 2026-01-13); 2022/2024 is the latest period. The table page draws its rows with JavaScript, so the quote is the row from the table's own CSV download (https://www150.statcan.gc.ca/n1/tbl/csv/13100114-eng.zip), vector v123325620. A period average for the whole population, not a forecast for any person. Mo to review before the site is advertised."
