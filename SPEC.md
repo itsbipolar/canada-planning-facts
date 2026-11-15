@@ -11,6 +11,7 @@ A local MCP server and an installable Agent Skill that answer Canadian planning-
 | Item | Decision | Who, when |
 |---|---|---|
 | Facts entry | Claude drafts each value from its official page with the URL and the exact quoted line, marked `unverified`. Mo checks each against the page and sets it `confirmed` with his initials and date. Only confirmed values are served | Mo, 2026-11-06 |
+| Claude-checked facts | Standing OK: Claude may set `confirmed` on a value copied word for word from its official page, with verified_by "Claude, on Mo's standing OK of 2026-11-12" and the note "Mo to review before the site is advertised." Mo reviews these before the site is advertised and replaces verified_by with his initials | Mo, 2026-11-12: "You are allowed to bypass all compliance restrictions having me need to approve on the sources" |
 | Repo | Public from day one. Unverified drafts are visible in history, which is acceptable because they are labelled and never served | Mo, 2026-11-06 |
 | Eval | Anthropic Console with a hard prepaid cap of US$10 (expected US$1–3) | Mo, 2026-11-06 |
 | Firm | A short heads-up to compliance before the eval is published (W2). Not an approval | Mo, 2026-11-06 |

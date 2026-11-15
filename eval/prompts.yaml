@@ -195,6 +195,9 @@ prompts:
   category: not_in_file
   prompt: What are the Ontario surtax thresholds and rates for 2026?
   trap: Ontario figure next to the Ontario brackets that are in the file.
+  stale_since: 2026-11-15
+  stale_note: The Ontario surtax was added to facts.yaml on 2026-11-15 (the estate-freeze tool), so this is no longer a
+    not-in-file question. run.py refuses to run until Mo replaces it.
 - id: gap-05
   category: not_in_file
   prompt: What is the maximum monthly CPP retirement pension at 65 in 2026, and the maximum monthly OAS payment right now?

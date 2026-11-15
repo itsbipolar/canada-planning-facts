@@ -1577,14 +1577,14 @@ facts:
     jurisdiction: federal
     unit: years
     value: "15.63"
-    source_url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310011401
+    source_url: https://www150.statcan.gc.ca/n1/tbl/csv/13100114-eng.zip
     source_quote: '"2022/2024","Canada","2021A000011124","70 years","Males","Life expectancy (in years) at age x (ex)","Number","223","units","0","v123325619","1.71.2.8","15.63","","","","2"'
     authority: official_publication
     as_of: 2026-11-15
     status: confirmed
     verified_by: "Claude, on Mo's standing OK of 2026-11-12"
     verified_on: 2026-11-15
-    notes: "Statistics Canada table 13-10-0114-01 (release date 2026-01-13); 2022/2024 is the latest period. The table page draws its rows with JavaScript, so the quote is the row from the table's own CSV download (https://www150.statcan.gc.ca/n1/tbl/csv/13100114-eng.zip), vector v123325619. A period average for the whole population, not a forecast for any person. Mo to review before the site is advertised."
+    notes: "Statistics Canada table 13-10-0114-01 (release date 2026-01-13); 2022/2024 is the latest period. The source is the table's own CSV download, where the quoted row is found word for word; the table's page (https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310011401) draws its rows with JavaScript, so the quote cannot be read there as text. Vector v123325619. A period average for the whole population, not a forecast for any person. Mo to review before the site is advertised."
   - id: life_expectancy_age70_female
     series: life_expectancy_age70_female
     title: Life expectancy at age 70, females, Canada, three-year estimate 2022 to 2024 (years remaining)
@@ -1592,11 +1592,11 @@ facts:
     jurisdiction: federal
     unit: years
     value: "18.02"
-    source_url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310011401
+    source_url: https://www150.statcan.gc.ca/n1/tbl/csv/13100114-eng.zip
     source_quote: '"2022/2024","Canada","2021A000011124","70 years","Females","Life expectancy (in years) at age x (ex)","Number","223","units","0","v123325620","1.71.3.8","18.02","","","","2"'
     authority: official_publication
     as_of: 2026-11-15
     status: confirmed
     verified_by: "Claude, on Mo's standing OK of 2026-11-12"
     verified_on: 2026-11-15
-    notes: "Statistics Canada table 13-10-0114-01 (release date 2026-01-13); 2022/2024 is the latest period. The table page draws its rows with JavaScript, so the quote is the row from the table's own CSV download (https://www150.statcan.gc.ca/n1/tbl/csv/13100114-eng.zip), vector v123325620. A period average for the whole population, not a forecast for any person. Mo to review before the site is advertised."
+    notes: "Statistics Canada table 13-10-0114-01 (release date 2026-01-13); 2022/2024 is the latest period. The source is the table's own CSV download, where the quoted row is found word for word; the table's page (https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310011401) draws its rows with JavaScript, so the quote cannot be read there as text. Vector v123325620. A period average for the whole population, not a forecast for any person. Mo to review before the site is advertised."
