@@ -44,8 +44,27 @@ def test_no_prompt_contains_its_answer():
 
 def test_not_in_file_figures_are_really_not_in_the_file():
     text = (ROOT / "facts.yaml").read_text().lower()
-    for word in ("small business", "capital gains", "home buyers", "surtax", "maximum monthly"):
+    # gap-02 asks for the lifetime capital gains exemption; the inclusion rate (added 2026-11-15) is a different figure.
+    for word in ("small business", "capital gains exemption", "home buyers", "maximum monthly"):
         assert word not in text, word
+
+
+def test_a_not_in_file_prompt_whose_figure_was_added_is_marked_stale_and_blocks_a_run():
+    # gap-04 (Ontario surtax) held at the 2026-11-10 run; the surtax was added on 2026-11-15 for the estate-freeze tool.
+    # It is marked stale_since, and run.py refuses to start while any selected prompt is stale, so no new run can score
+    # it as a not-in-file question. The recorded run's claim stays true: every surtax entry is newer than the run.
+    from datetime import date
+
+    from canada_planning_facts.facts import load_facts
+    from run import stale_prompts
+
+    text = (ROOT / "facts.yaml").read_text().lower()
+    gap04 = next(p for p in PROMPTS if p["id"] == "gap-04")
+    assert "surtax" in text and gap04.get("stale_since") and gap04.get("stale_note")
+    assert stale_prompts(PROMPTS) == ["gap-04"]
+    assert "stale_prompts(prompts)" in (ROOT / "eval" / "run.py").read_text()
+    surtax = [f for f in load_facts().facts if "surtax" in f.series]
+    assert surtax and all(f.as_of > date(2026, 11, 10) for f in surtax)
 
 
 def test_multi_target_lookup_needs_every_value():

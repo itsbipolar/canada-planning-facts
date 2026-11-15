@@ -36,6 +36,12 @@ BASE_SYSTEM = (
 MAX_TOOL_TURNS = 6
 
 
+def stale_prompts(prompts: list[dict]) -> list[str]:
+    """Prompts marked stale_since: a not-in-file question whose figure has since been added to facts.yaml. A run with
+    one would score a held line against a figure the file now has, so main() refuses to start."""
+    return [p["id"] for p in prompts if p.get("stale_since")]
+
+
 class Spend:
     def __init__(self, in_price: float, out_price: float, cap: float):
         self.in_price, self.out_price, self.cap, self.usd = in_price, out_price, cap, 0.0
@@ -107,6 +113,9 @@ async def main() -> None:
     prompts = yaml.safe_load((ROOT / "eval" / "prompts.yaml").read_text())["prompts"]
     if args.only:
         prompts = [p for p in prompts if p["id"] in args.only]
+    stale = stale_prompts(prompts)
+    if stale:
+        raise SystemExit(f"Stale prompts {', '.join(stale)}: their answers are now in facts.yaml (stale_note). Replace them first.")
     facts = load_facts()
     import os
     key = os.environ.get("EVAL_ANTHROPIC_API_KEY")

@@ -7,7 +7,7 @@ Python 3.12, uv, FastMCP, pydantic v2, pytest. Run `uv run pytest` before every 
 ## Facts
 - facts.yaml is the only source. facts.json, SKILL.md and references/facts.md are generated; never hand-edit them.
 - Claude drafts values only by copying them from the official page, with the URL and the exact quoted line,
-  status `unverified`. Never a value from memory. Only Mo sets `confirmed` (verified_by, verified_on).
+  status `unverified`. Never a value from memory. Only Mo sets `confirmed` (verified_by, verified_on), except under his standing OK of 2026-11-12 (SPEC.md §2: Claude-checked, marked as such, for Mo to review before the site is advertised).
 - Sources: https on canada.ca, ontario.ca, bankofcanada.ca (and subdomains) or any host under gc.ca. Nothing else.
 - 2027 values stay `pending` with value null until the government publishes them.
 - The server serves `confirmed` values only. Unverified or unknown: "Not in the verified facts file."
