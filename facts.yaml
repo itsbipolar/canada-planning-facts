@@ -1606,7 +1606,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "Added to the capital dividend account: the proceeds of a life insurance policy received by the corporation in consequence of the death of any person, less the policy's adjusted cost basis immediately before the death (see cda_life_insurance_acb_deduction)"
+    value: "(ii) all amounts each of which is the proceeds of a life insurance policy (other than an LIA policy) of which the corporation was not a beneficiary on or before June 28, 1982 received by the corporation in the period and after May 23, 1985 in consequence of the death of any person"
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html
     source_quote: "(ii) all amounts each of which is the proceeds of a life insurance policy (other than an LIA policy) of which the corporation was not a beneficiary on or before June 28, 1982 received by the corporation in the period and after May 23, 1985 in consequence of the death of any person"
     authority: statute
@@ -1621,7 +1621,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "Subtracted from the life insurance proceeds added to the capital dividend account: the adjusted cost basis (as defined in 148(9)), immediately before the death, of the policyholder's interest in the policy (deaths after March 21, 2016)"
+    value: "(iii) the adjusted cost basis (in this paragraph as defined in subsection 148(9)), immediately before the death, of"
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html
     source_quote: "(iii) the adjusted cost basis (in this paragraph as defined in subsection 148(9)), immediately before the death, of"
     authority: statute
@@ -1636,7 +1636,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "When a private corporation elects for the full amount of a dividend (in prescribed manner and form, on time), the dividend is a capital dividend to the extent of its capital dividend account immediately before it became payable, and no part of it is included in computing the income of any shareholder"
+    value: "(b) no part of the dividend shall be included in computing the income of any shareholder of the corporation."
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html
     source_quote: "(b) no part of the dividend shall be included in computing the income of any shareholder of the corporation."
     authority: statute
@@ -1758,7 +1758,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "A formula: amounts that raise the basis (A to G.1, among them the cost of an interest acquired and premiums paid by or on behalf of the policyholder) less amounts that lower it (H to O, among them proceeds of disposition and, for policies last acquired after December 1, 1982, the net cost of pure insurance determined by the issuer)"
+    value: "adjusted cost basis, at any time to a policyholder of the policyholder’s interest in a life insurance policy, means the amount determined by the formula"
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-148.html
     source_quote: "adjusted cost basis, at any time to a policyholder of the policyholder’s interest in a life insurance policy, means the amount determined by the formula"
     authority: statute
@@ -1773,7 +1773,7 @@ facts:
     kind: fixed
     jurisdiction: "ON"
     unit: text
-    value: "The surtax is figured on the gross tax amount: basic Ontario tax less the non-refundable credits in subdivision b, plus additional taxes (sections 11 and 12), less the credits in subdivision d. The Ontario dividend tax credit (section 19.1, subdivision g) is not among them, so it comes off after the surtax"
+    value: "1. Determine the amount, if any, by which the individual’s basic personal income tax for the year, as determined under subdivision a, exceeds the sum of all non-refundable tax credits under subdivision b that are deducted by the individual for the year."
     source_url: https://www.ontario.ca/laws/statute/07t11
     source_quote: "1. Determine the amount, if any, by which the individual’s basic personal income tax for the year, as determined under subdivision a, exceeds the sum of all non-refundable tax credits under subdivision b that are deducted by the individual for the year."
     authority: statute
@@ -1788,7 +1788,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "A company must keep accounts for its participating policies separately from the accounts for its other policies, in the form and manner the Superintendent sets"
+    value: "A company shall maintain accounts, in the form and manner determined by the Superintendent, in respect of participating policies, separately from those maintained in respect of other policies."
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-11.8/section-456.html
     source_quote: "A company shall maintain accounts, in the form and manner determined by the Superintendent, in respect of participating policies, separately from those maintained in respect of other policies."
     authority: statute
@@ -1803,7 +1803,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "OSFI expects an insurer's dividend policy statement to say clearly that dividends cannot be guaranteed, since actual levels of experience cannot be known in advance, and that dividends may be reduced if experience deteriorates"
+    value: "The statement should be clear that since actual levels of experience cannot be known in advance, dividends cannot be guaranteed."
     source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
     source_quote: "The statement should be clear that since actual levels of experience cannot be known in advance, dividends cannot be guaranteed."
     authority: official_publication
@@ -1814,11 +1814,11 @@ facts:
     notes: "OSFI Guideline E-16 (2023), 'Participating account management and disclosure to participating policyholders and adjustable policyholders', dated January 18, 2023 (page 'Date modified: 2023-01-18'). Section 4, the comment on Policyholders Disclosure Regulations 2(a)(i) and (ii). The next sentence reads 'It is also important for the statement to note that experience can deteriorate over time and that, as a result, dividends may be reduced.' A guideline sets OSFI's expectations; it is not law: word it as 'OSFI expects'. Used by the participating policy dividends tool. Mo to review before the site is advertised."
   - id: par_board_discretion
     series: par_board_discretion
-    title: Participating policy dividends are declared at the discretion of the insurer's board of directors (Policyholders Disclosure Regulations 2(a)(i))
+    title: Participating policy dividends are declared at the discretion of a life insurer's board of directors (Policyholders Disclosure Regulations 2(a)(i))
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "An insurer's dividend policy must state that dividends are declared at the discretion of its board of directors, and that the policy may be amended from time to time at the board's discretion"
+    value: "that the dividends or bonuses are declared at the discretion of the board of directors of the company"
     source_url: https://laws-lois.justice.gc.ca/eng/regulations/SOR-2010-234/FullText.html
     source_quote: "that the dividends or bonuses are declared at the discretion of the board of directors of the company"
     authority: statute
@@ -1833,7 +1833,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "Policy dividends are generated by the differences between actual and assumed levels of experience for factors such as mortality, expenses and investment income; OSFI expects insurers to say so"
+    value: "It is important to indicate that policy dividends are generated by the differences between actual levels of experience for certain factors (e.g. mortality, expenses, investment income, etc.) and assumed levels of experience for these factors."
     source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
     source_quote: "It is important to indicate that policy dividends are generated by the differences between actual levels of experience for certain factors (e.g. mortality, expenses, investment income, etc.) and assumed levels of experience for these factors."
     authority: official_publication
@@ -1848,7 +1848,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "OSFI's view: smoothing of dividends should be allowed and may even be desirable, but it should not result in one cohort of policyholders subsidizing another"
+    value: "Smoothing of dividends should be allowed, and may even be desirable, but should not result in cross-subsidization of one cohort by another."
     source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
     source_quote: "Smoothing of dividends should be allowed, and may even be desirable, but should not result in cross-subsidization of one cohort by another."
     authority: official_publication
@@ -1863,7 +1863,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "OSFI expects smoothing to be used only to avoid undue yearly fluctuations in the dividend scale, by a method that is reasonably justifiable and documented"
+    value: "Smoothing should only be used to avoid undue yearly fluctuations in the dividend scale and the method used should be reasonably justifiable and documented."
     source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
     source_quote: "Smoothing should only be used to avoid undue yearly fluctuations in the dividend scale and the method used should be reasonably justifiable and documented."
     authority: official_publication
@@ -1878,7 +1878,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "In the annual financial statement, OSFI expects the participating account's investment rate of return to be shown as a market yield without smoothing and net of investment expenses, next to the dividend scale interest rate, for the current year and as 5-, 10- and 20-year averages"
+    value: "Investment rate of return should be expressed as a market yield without smoothing and net of investment expenses."
     source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
     source_quote: "Investment rate of return should be expressed as a market yield without smoothing and net of investment expenses."
     authority: official_publication
@@ -1893,7 +1893,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "The company's actuary must report in writing to the directors on whether a proposed dividend is fair to participating policyholders and follows the dividend policy, and the directors must consider that report before declaring it"
+    value: "The company’s actuary shall, in writing, report to the directors on the fairness to participating policyholders of a proposed dividend, bonus or other benefit and whether it is in accordance with the policy."
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-11.8/section-464.html
     source_quote: "The company’s actuary shall, in writing, report to the directors on the fairness to participating policyholders of a proposed dividend, bonus or other benefit and whether it is in accordance with the policy."
     authority: statute
@@ -1908,7 +1908,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "From 2.5% to 10%, depending on the size of the sum of all the company's participating accounts (smaller accounts allow the higher figure); applied to the portion of each participating account's profits the directors set for distribution to shareholders and participating policyholders that year. Companies with share capital only; see par_shareholder_cap_tiers for the formula"
+    value: "A transferable percentage (varying from 2.5% to 10%) is calculated based on the size of the sum of all the participating accounts, including any closed blocks resulting from demutualization;"
     source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
     source_quote: "A transferable percentage (varying from 2.5% to 10%) is calculated based on the size of the sum of all the participating accounts, including any closed blocks resulting from demutualization;"
     authority: official_publication
@@ -1938,11 +1938,11 @@ facts:
     notes: "461(a): the amounts paid or transferred in the year may not exceed 'the percentage of the portion of the profits of the participating account that is determined by the directors as the portion to be distributed for that financial year to the shareholders and participating policyholders, which percentage shall not exceed the number, expressed as a percentage, that is the aggregate of' '(i) 10 multiplied by the lesser of (A) the sum of the opening balances for that financial year of all participating accounts of the company, and (B) two hundred and fifty million dollars,', '(ii) 7.5 multiplied by the amount, if any, by which the lesser of (A) [the same sum] and (B) five hundred million dollars exceeds two hundred and fifty million dollars,', '(iii) 5 multiplied by the amount, if any, by which the lesser of (A) [the same sum] and (B) one billion dollars exceeds five hundred million dollars, and', then the quoted line, 'divided by the sum of the opening balances for that financial year of all the participating accounts;'. It works like marginal brackets: the ceiling is the balance-weighted average of the rates, 10% up to $250 million in total opening balances and falling towards 2.5% for very large accounts. Rows give dollar slices of the sum of opening balances (from/to in CAD) and the rate in percent. 461(b) and (c) also require dividends to be paid under the dividend policy and the actuary's opinion that the transfer would not materially affect it. Act current to 2026-10-29 (last amended 2026-09-01). Mo to review before the site is advertised."
   - id: par_policies_on_request
     series: par_policies_on_request
-    title: A participating policyholder can get the insurer's dividend policy and participating account management policy free on request (Insurance Companies Act 165(4.1))
+    title: A participating policyholder can get a life insurer's dividend policy and participating account management policy free on request (Insurance Companies Act 165(4.1))
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "On request, the company must send a shareholder or participating policyholder a copy of its dividend policy and its participating account management policy free of charge (anyone else, for a reasonable fee)"
+    value: "The company shall on request and free of charge send a copy of a policy established or amended under paragraph (2)(e) or (e.1) to a shareholder or participating policyholder and on payment of a reasonable fee to any other person."
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-11.8/section-165.html
     source_quote: "The company shall on request and free of charge send a copy of a policy established or amended under paragraph (2)(e) or (e.1) to a shareholder or participating policyholder and on payment of a reasonable fee to any other person."
     authority: statute
