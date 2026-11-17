@@ -1600,3 +1600,185 @@ facts:
     verified_by: "Claude, on Mo's standing OK of 2026-11-12"
     verified_on: 2026-11-15
     notes: "Statistics Canada table 13-10-0114-01 (release date 2026-01-13); 2022/2024 is the latest period. The source is the table's own CSV download, where the quoted row is found word for word; the table's page (https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310011401) draws its rows with JavaScript, so the quote cannot be read there as text. Vector v123325620. A period average for the whole population, not a forecast for any person. Mo to review before the site is advertised."
+  - id: cda_life_insurance_proceeds
+    series: cda_life_insurance_proceeds
+    title: Life insurance proceeds a corporation receives on a death are added to its capital dividend account (Income Tax Act 89(1), capital dividend account, paragraph (d))
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "Added to the capital dividend account: the proceeds of a life insurance policy received by the corporation in consequence of the death of any person, less the policy's adjusted cost basis immediately before the death (see cda_life_insurance_acb_deduction)"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html
+    source_quote: "(ii) all amounts each of which is the proceeds of a life insurance policy (other than an LIA policy) of which the corporation was not a beneficiary on or before June 28, 1982 received by the corporation in the period and after May 23, 1985 in consequence of the death of any person"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "Paragraph (d) of the definition 'capital dividend account' in 89(1) opens 'the amount, if any, by which the total of' (i), proceeds where the corporation was a beneficiary on or before June 28, 1982, and (ii), quoted, 'exceeds the total of all amounts each of which is' (iii) the adjusted cost basis and (iv) to (vi), which deal with 10/8 policies and some transfers of policies before March 22, 2016. 'The period' starts with the corporation's first taxation year that began after it last became a private corporation. The account is the total of paragraphs (a) to (h) less other amounts, so this is one part of it. Act current to 2026-10-29 (last amended 2026-06-18). Used by the corporate-owned life insurance tool. Mo to review before the site is advertised."
+  - id: cda_life_insurance_acb_deduction
+    series: cda_life_insurance_acb_deduction
+    title: The policy's adjusted cost basis immediately before the death is taken off the proceeds added to the capital dividend account (Income Tax Act 89(1), capital dividend account, subparagraph (d)(iii))
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "Subtracted from the life insurance proceeds added to the capital dividend account: the adjusted cost basis (as defined in 148(9)), immediately before the death, of the policyholder's interest in the policy (deaths after March 21, 2016)"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html
+    source_quote: "(iii) the adjusted cost basis (in this paragraph as defined in subsection 148(9)), immediately before the death, of"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "The quoted line continues with '(A) if the death occurs before March 22, 2016, a policy referred to in subparagraph (i) or (ii) to the corporation, and' and '(B) if the death occurs after March 21, 2016, a policyholder’s interest in a policy referred to in subparagraph (i) or (ii),'. The part of the proceeds equal to this basis does not go into the account. Act current to 2026-10-29 (last amended 2026-06-18). Mo to review before the site is advertised."
+  - id: capital_dividend_election
+    series: capital_dividend_election
+    title: A dividend a private corporation elects to be a capital dividend is not included in the shareholder's income (Income Tax Act 83(2))
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "When a private corporation elects for the full amount of a dividend (in prescribed manner and form, on time), the dividend is a capital dividend to the extent of its capital dividend account immediately before it became payable, and no part of it is included in computing the income of any shareholder"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html
+    source_quote: "(b) no part of the dividend shall be included in computing the income of any shareholder of the corporation."
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "83(2) opens 'Where at any particular time after 1971 a dividend becomes payable by a private corporation to shareholders of any class of shares of its capital stock and the corporation so elects in respect of the full amount of the dividend, in prescribed manner and prescribed form and at or before the particular time or the first day on which any part of the dividend was paid if that day is earlier than the particular time, the following rules apply:' and rule (a) reads '(a) the dividend shall be deemed to be a capital dividend to the extent of the corporation’s capital dividend account immediately before the particular time; and'. 83(2.1) to (2.4) are anti-avoidance rules; 83(2.3) says 83(2.1) does not apply where the purpose of the dividend was to distribute life insurance proceeds included in the account under paragraph (d). The CRA form is 'T2054 Election for a Capital Dividend Under Subsection 83(2)' (canada.ca forms page, page details 2025-03-24; read through a page reader, as canada.ca refuses a direct download here). Act current to 2026-10-29. Mo to review before the site is advertised."
+  - id: dividend_gross_up_non_eligible
+    series: dividend_gross_up_non_eligible
+    title: Gross-up on taxable dividends other than eligible dividends, percent of the dividend added to an individual's income (Income Tax Act 82(1)(b)(i))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "15"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html
+    source_quote: "(B) for taxation years after 2018, 15%, and"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "82(1)(b) applies to an individual (other than a trust that is a registered charity): '(i) the product of the amount determined under paragraph (a) in respect of the taxpayer for the taxation year multiplied by' then '(A) for the 2018 taxation year, 16%, and' and the quoted line. Paragraph (a) is the taxable dividends other than eligible dividends. A $100 dividend is taxed as $115 of income. Act current to 2026-10-29. Mo to review before the site is advertised."
+  - id: dividend_gross_up_eligible
+    series: dividend_gross_up_eligible
+    title: Gross-up on eligible dividends, percent of the dividend added to an individual's income (Income Tax Act 82(1)(b)(ii))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "38"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html
+    source_quote: "(D) for taxation years that end after 2011, 38%;"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "From '(ii) the product of the amount determined under paragraph (a.1) in respect of the taxpayer for the taxation year multiplied by'; paragraph (a.1) is eligible dividends. A $100 eligible dividend is taxed as $138 of income. Act current to 2026-10-29. Mo to review before the site is advertised."
+  - id: federal_dividend_tax_credit_non_eligible
+    series: federal_dividend_tax_credit_non_eligible
+    title: Federal dividend tax credit on dividends other than eligible dividends, percent of the gross-up amount (Income Tax Act 121(a))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "69.2307692308"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html
+    source_quote: "(ii) for taxation years after 2018, 9/13, and"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "The Act says 9/13; stored as 69.2307692308 percent (10 decimal places). It multiplies 'the amount, if any, that is required by subparagraph 82(1)(b)(i) to be included in computing the individual’s income for the year', that is the gross-up (dividend_gross_up_non_eligible), not the dividend. 121 opens 'There may be deducted from the tax otherwise payable under this Part by an individual for a taxation year the total of'. Computed, not quoted: 9/13 of a 15% gross-up is about 9.03% of the grossed-up dividend. Act current to 2026-10-29. Mo to review before the site is advertised."
+  - id: federal_dividend_tax_credit_eligible
+    series: federal_dividend_tax_credit_eligible
+    title: Federal dividend tax credit on eligible dividends, percent of the gross-up amount (Income Tax Act 121(b))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value: "54.5454545455"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html
+    source_quote: "(iv) for taxation years after 2011, 6/11."
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "The Act says 6/11; stored as 54.5454545455 percent (10 decimal places). It multiplies 'the amount, if any, that is required by subparagraph 82(1)(b)(ii) to be included in computing the individual’s income for the year', that is the eligible gross-up. Computed, not quoted: 6/11 of a 38% gross-up is about 15.02% of the grossed-up dividend. Act current to 2026-10-29. Mo to review before the site is advertised."
+  - id: ontario_dividend_tax_credit_non_eligible.2026
+    series: ontario_dividend_tax_credit_non_eligible
+    title: Ontario dividend tax credit on dividends other than eligible dividends, percent of the federal gross-up amount (Taxation Act, 2007 (Ontario) 19.1)
+    kind: yearly
+    jurisdiction: "ON"
+    tax_year: 2026
+    unit: percent
+    value: "22.895"
+    source_url: https://www.ontario.ca/laws/statute/07t11
+    source_quote: "(a.3) 22.895 per cent of any amount required under subparagraph 82 (1) (b) (i) of the Federal Act to be included in computing the individual’s income for the year, if the year ends after December 31, 2019 and before January 1, 2027;"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "Section 19.1, 'Ontario dividend tax credit, 2016 and subsequent taxation years', for an individual resident in Ontario on the last day of the year. The base is the federal gross-up (dividend_gross_up_non_eligible), not the dividend. Computed, not quoted: about 2.99% of the grossed-up dividend. Consolidation period from July 1, 2026 (the section was last amended by 2026, c. 2, Sched. 15, s. 1, in force 01/07/2026). Read as text from the e-Laws page. Mo to review before the site is advertised."
+  - id: ontario_dividend_tax_credit_non_eligible.2027
+    series: ontario_dividend_tax_credit_non_eligible
+    title: Ontario dividend tax credit on dividends other than eligible dividends, percent of the federal gross-up amount (Taxation Act, 2007 (Ontario) 19.1)
+    kind: yearly
+    jurisdiction: "ON"
+    tax_year: 2027
+    unit: percent
+    value: "15.2283"
+    source_url: https://www.ontario.ca/laws/statute/07t11
+    source_quote: "(a.4) 15.2283 per cent of any amount required under subparagraph 82 (1) (b) (i) of the Federal Act to be included in computing the individual’s income for the year, if the year ends after December 31, 2026; and"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "Already law, not a forecast: added by 2026, c. 2, Sched. 15, s. 1 (in force 01/07/2026), so the 2027 rate is published and confirmed rather than pending. It applies to every year after 2026 until the Act changes again. Computed, not quoted: about 1.99% of the grossed-up dividend. Mo to review before the site is advertised."
+  - id: ontario_dividend_tax_credit_eligible
+    series: ontario_dividend_tax_credit_eligible
+    title: Ontario dividend tax credit on eligible dividends, percent of the federal gross-up amount (Taxation Act, 2007 (Ontario) 19.1(b))
+    kind: fixed
+    jurisdiction: "ON"
+    unit: percent
+    value: "36.3158"
+    source_url: https://www.ontario.ca/laws/statute/07t11
+    source_quote: "(b) 36.3158 per cent of any amount required under subparagraph 82 (1) (b) (ii) of the Federal Act to be included in computing the individual’s income for the year."
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "Section 19.1, taxation years ending after December 31, 2015; no end year. The base is the federal eligible gross-up (dividend_gross_up_eligible). Computed, not quoted: about 10.00% of the grossed-up dividend. Consolidation period from July 1, 2026. Mo to review before the site is advertised."
+  - id: life_insurance_policy_acb_definition
+    series: life_insurance_policy_acb_definition
+    title: Adjusted cost basis of a policyholder's interest in a life insurance policy (Income Tax Act 148(9))
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "A formula: amounts that raise the basis (A to G.1, among them the cost of an interest acquired and premiums paid by or on behalf of the policyholder) less amounts that lower it (H to O, among them proceeds of disposition and, for policies last acquired after December 1, 1982, the net cost of pure insurance determined by the issuer)"
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-148.html
+    source_quote: "adjusted cost basis, at any time to a policyholder of the policyholder’s interest in a life insurance policy, means the amount determined by the formula"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "The formula is '(A + B + C + D + E + F + G + G.1) – (H + I + J + K + L + M + N + O)'. B 'is the total of all amounts each of which is an amount paid before that time by or on behalf of the policyholder in respect of a premium under the policy, other than amounts referred to in' certain provisions; L(a) is 'in the case of an interest in a life insurance policy (other than an annuity contract) that was last acquired after December 1, 1982 by the policyholder, the total of all amounts each of which is the net cost of pure insurance, as defined by regulation and determined by the issuer of the policy in accordance with the regulations'. The net cost of pure insurance tables are in the Regulations and are not in this file. A text rule only; no figure. Act current to 2026-10-29. Mo to review before the site is advertised."
+  - id: ontario_surtax_base
+    series: ontario_surtax_base
+    title: What the Ontario surtax is figured on, the gross tax amount, and where the Ontario dividend tax credit comes in (Taxation Act, 2007 (Ontario) 16(2))
+    kind: fixed
+    jurisdiction: "ON"
+    unit: text
+    value: "The surtax is figured on the gross tax amount: basic Ontario tax less the non-refundable credits in subdivision b, plus additional taxes (sections 11 and 12), less the credits in subdivision d. The Ontario dividend tax credit (section 19.1, subdivision g) is not among them, so it comes off after the surtax"
+    source_url: https://www.ontario.ca/laws/statute/07t11
+    source_quote: "1. Determine the amount, if any, by which the individual’s basic personal income tax for the year, as determined under subdivision a, exceeds the sum of all non-refundable tax credits under subdivision b that are deducted by the individual for the year."
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "16(2) goes on: '2. Determine the amount of the individual’s additional tax, if any, payable for the year under sections 11 and 12.', '3. Add the amounts determined under paragraphs 1 and 2.' and '4. The gross tax amount of the individual for the year is the amount, if any, by which the total amount determined under paragraph 3 exceeds the sum of all tax credits under subdivision d that are deducted by the individual for the year.' The Act's table of contents lists 'Subdivision d — Additional Tax Credits before Surtax' (sections 13 to 15) and 'Subdivision g — Ontario Dividend Tax Credit, 2016 and subsequent taxation years' (section 19.1). The surtax thresholds and rates are in ontario_surtax.<year> (T4127). Needed to compute a dividend's Ontario tax at the top bracket correctly. Mo to review before the site is advertised."
