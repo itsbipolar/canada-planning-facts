@@ -1606,7 +1606,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "Added to the capital dividend account: the proceeds of a life insurance policy received by the corporation in consequence of the death of any person, less the policy's adjusted cost basis immediately before the death (see cda_life_insurance_acb_deduction)"
+    value: "(ii) all amounts each of which is the proceeds of a life insurance policy (other than an LIA policy) of which the corporation was not a beneficiary on or before June 28, 1982 received by the corporation in the period and after May 23, 1985 in consequence of the death of any person"
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html
     source_quote: "(ii) all amounts each of which is the proceeds of a life insurance policy (other than an LIA policy) of which the corporation was not a beneficiary on or before June 28, 1982 received by the corporation in the period and after May 23, 1985 in consequence of the death of any person"
     authority: statute
@@ -1621,7 +1621,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "Subtracted from the life insurance proceeds added to the capital dividend account: the adjusted cost basis (as defined in 148(9)), immediately before the death, of the policyholder's interest in the policy (deaths after March 21, 2016)"
+    value: "(iii) the adjusted cost basis (in this paragraph as defined in subsection 148(9)), immediately before the death, of"
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-89.html
     source_quote: "(iii) the adjusted cost basis (in this paragraph as defined in subsection 148(9)), immediately before the death, of"
     authority: statute
@@ -1636,7 +1636,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "When a private corporation elects for the full amount of a dividend (in prescribed manner and form, on time), the dividend is a capital dividend to the extent of its capital dividend account immediately before it became payable, and no part of it is included in computing the income of any shareholder"
+    value: "(b) no part of the dividend shall be included in computing the income of any shareholder of the corporation."
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-83.html
     source_quote: "(b) no part of the dividend shall be included in computing the income of any shareholder of the corporation."
     authority: statute
@@ -1758,7 +1758,7 @@ facts:
     kind: fixed
     jurisdiction: federal
     unit: text
-    value: "A formula: amounts that raise the basis (A to G.1, among them the cost of an interest acquired and premiums paid by or on behalf of the policyholder) less amounts that lower it (H to O, among them proceeds of disposition and, for policies last acquired after December 1, 1982, the net cost of pure insurance determined by the issuer)"
+    value: "adjusted cost basis, at any time to a policyholder of the policyholder’s interest in a life insurance policy, means the amount determined by the formula"
     source_url: https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-148.html
     source_quote: "adjusted cost basis, at any time to a policyholder of the policyholder’s interest in a life insurance policy, means the amount determined by the formula"
     authority: statute
@@ -1773,7 +1773,7 @@ facts:
     kind: fixed
     jurisdiction: "ON"
     unit: text
-    value: "The surtax is figured on the gross tax amount: basic Ontario tax less the non-refundable credits in subdivision b, plus additional taxes (sections 11 and 12), less the credits in subdivision d. The Ontario dividend tax credit (section 19.1, subdivision g) is not among them, so it comes off after the surtax"
+    value: "1. Determine the amount, if any, by which the individual’s basic personal income tax for the year, as determined under subdivision a, exceeds the sum of all non-refundable tax credits under subdivision b that are deducted by the individual for the year."
     source_url: https://www.ontario.ca/laws/statute/07t11
     source_quote: "1. Determine the amount, if any, by which the individual’s basic personal income tax for the year, as determined under subdivision a, exceeds the sum of all non-refundable tax credits under subdivision b that are deducted by the individual for the year."
     authority: statute
@@ -1782,3 +1782,172 @@ facts:
     verified_by: "Claude, on Mo's standing OK of 2026-11-12"
     verified_on: 2026-11-17
     notes: "16(2) goes on: '2. Determine the amount of the individual’s additional tax, if any, payable for the year under sections 11 and 12.', '3. Add the amounts determined under paragraphs 1 and 2.' and '4. The gross tax amount of the individual for the year is the amount, if any, by which the total amount determined under paragraph 3 exceeds the sum of all tax credits under subdivision d that are deducted by the individual for the year.' The Act's table of contents lists 'Subdivision d — Additional Tax Credits before Surtax' (sections 13 to 15) and 'Subdivision g — Ontario Dividend Tax Credit, 2016 and subsequent taxation years' (section 19.1). The surtax thresholds and rates are in ontario_surtax.<year> (T4127). Needed to compute a dividend's Ontario tax at the top bracket correctly. Mo to review before the site is advertised."
+  - id: par_separate_account
+    series: par_separate_account
+    title: A life insurer keeps the accounts for its participating policies separate from its other policies (Insurance Companies Act 456)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "A company shall maintain accounts, in the form and manner determined by the Superintendent, in respect of participating policies, separately from those maintained in respect of other policies."
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-11.8/section-456.html
+    source_quote: "A company shall maintain accounts, in the form and manner determined by the Superintendent, in respect of participating policies, separately from those maintained in respect of other policies."
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "The whole of section 456 (marginal note 'Participating account'). Sections 457 and 458 allocate investment income (including unrealized gains and losses) and expenses to these accounts; section 462 limits transfers out of them. Act current to 2026-10-29 (last amended 2026-09-01). A text rule only; no figure. Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_dividends_not_guaranteed
+    series: par_dividends_not_guaranteed
+    title: Participating policy dividends cannot be guaranteed, because actual experience is not known in advance (OSFI Guideline E-16, section 4)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "The statement should be clear that since actual levels of experience cannot be known in advance, dividends cannot be guaranteed."
+    source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
+    source_quote: "The statement should be clear that since actual levels of experience cannot be known in advance, dividends cannot be guaranteed."
+    authority: official_publication
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "OSFI Guideline E-16 (2023), 'Participating account management and disclosure to participating policyholders and adjustable policyholders', dated January 18, 2023 (page 'Date modified: 2023-01-18'). Section 4, the comment on Policyholders Disclosure Regulations 2(a)(i) and (ii). The next sentence reads 'It is also important for the statement to note that experience can deteriorate over time and that, as a result, dividends may be reduced.' A guideline sets OSFI's expectations; it is not law: word it as 'OSFI expects'. Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_board_discretion
+    series: par_board_discretion
+    title: Participating policy dividends are declared at the discretion of a life insurer's board of directors (Policyholders Disclosure Regulations 2(a)(i))
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "that the dividends or bonuses are declared at the discretion of the board of directors of the company"
+    source_url: https://laws-lois.justice.gc.ca/eng/regulations/SOR-2010-234/FullText.html
+    source_quote: "that the dividends or bonuses are declared at the discretion of the board of directors of the company"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "Policyholders Disclosure Regulations, SOR/2010-234, section 2: 'A policy respecting participating policy dividends and bonuses established under paragraph 165(2)(e) of the Act shall include the following information: (a) a statement indicating (i) [the quoted line], and (ii) that the company’s policy respecting participating policy dividends and bonuses may be amended from time to time at the discretion of the board of directors of the company;'. Paragraphs (b) to (f) add how often experience and scales are examined, the main factors, how dividends are shared among classes, the main sources of income and how policyholder behaviour is reflected. Regulations current to 2026-10-29 (last amended 2011-06-01). Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_actual_vs_assumed
+    series: par_actual_vs_assumed
+    title: Participating policy dividends come from the difference between actual and assumed experience (OSFI Guideline E-16, section 4)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "It is important to indicate that policy dividends are generated by the differences between actual levels of experience for certain factors (e.g. mortality, expenses, investment income, etc.) and assumed levels of experience for these factors."
+    source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
+    source_quote: "It is important to indicate that policy dividends are generated by the differences between actual levels of experience for certain factors (e.g. mortality, expenses, investment income, etc.) and assumed levels of experience for these factors."
+    authority: official_publication
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "OSFI Guideline E-16 (2023), section 4, the comment on Policyholders Disclosure Regulations 2(e) (the principal sources of income considered in declaring dividends). Page 'Date modified: 2023-01-18'. A guideline, not law. Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_smoothing_allowed
+    series: par_smoothing_allowed
+    title: Smoothing of participating policy dividends is allowed but must not cross-subsidize one cohort with another (OSFI Guideline E-16, section 3)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "Smoothing of dividends should be allowed, and may even be desirable, but should not result in cross-subsidization of one cohort by another."
+    source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
+    source_quote: "Smoothing of dividends should be allowed, and may even be desirable, but should not result in cross-subsidization of one cohort by another."
+    authority: official_publication
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "OSFI Guideline E-16 (2023), section 3 ('Requirements and opinions of the Appointed Actuary'), among the general principles for deciding on fairness for policy dividends. The paragraph ends 'An internal guideline on smoothing should be established in advance as part of the dividend and/or management policies required by the Regulations.' E-16 gives no smoothing formula, period or parameters. Page 'Date modified: 2023-01-18'. A guideline, not law. Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_smoothing_purpose
+    series: par_smoothing_purpose
+    title: Smoothing is only for avoiding undue yearly swings in the dividend scale, by a justifiable, documented method (OSFI Guideline E-16, section 3)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "Smoothing should only be used to avoid undue yearly fluctuations in the dividend scale and the method used should be reasonably justifiable and documented."
+    source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
+    source_quote: "Smoothing should only be used to avoid undue yearly fluctuations in the dividend scale and the method used should be reasonably justifiable and documented."
+    authority: official_publication
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "OSFI Guideline E-16 (2023), section 3, the sentence after the one in par_smoothing_allowed. Section 4 (comment on Regulations 2(b)) expects insurers to disclose whether they smooth and, if so, its objective, the factors considered, any differences by sub-account or dividend class, and whether an internal guideline governs it. E-16 sets no smoothing period: any period in a tool is an assumption. Page 'Date modified: 2023-01-18'. A guideline, not law. Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_return_unsmoothed
+    series: par_return_unsmoothed
+    title: The participating account's disclosed investment return is a market yield without smoothing, net of investment expenses (OSFI Guideline E-16, section 4)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "Investment rate of return should be expressed as a market yield without smoothing and net of investment expenses."
+    source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
+    source_quote: "Investment rate of return should be expressed as a market yield without smoothing and net of investment expenses."
+    authority: official_publication
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "OSFI Guideline E-16 (2023), section 4, the comment on Policyholders Disclosure Regulations 4(b)-(d). The sentence before reads 'The current year, and the historical 5-, 10-, and 20-year average annual dividend scale interest rate, participating account investment rate of return, participating surplus investment rate of return, as per the following table.' and the one after 'Historical average annual rates prior to 2023 should be reported on a best effort basis.' E-16 uses 'dividend scale interest rate' but does not define it. Page 'Date modified: 2023-01-18'. A guideline, not law. Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_actuary_report
+    series: par_actuary_report
+    title: Before a participating dividend is declared, the company's actuary reports to the directors on its fairness (Insurance Companies Act 464(2))
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "The company’s actuary shall, in writing, report to the directors on the fairness to participating policyholders of a proposed dividend, bonus or other benefit and whether it is in accordance with the policy."
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-11.8/section-464.html
+    source_quote: "The company’s actuary shall, in writing, report to the directors on the fairness to participating policyholders of a proposed dividend, bonus or other benefit and whether it is in accordance with the policy."
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "464(2) (marginal note 'Report of actuary') goes on: 'The directors shall consider the actuary’s report before declaring the dividend, bonus or other benefit.' 464(1): the directors 'may declare, and the company may pay or otherwise satisfy, a dividend, bonus or other benefit on those policies in accordance with its dividend or bonus policy established pursuant to paragraph 165(2)(e).' 464(3): no declaration if there are reasonable grounds for believing the company is, or would be, in breach of the capital rules in 515. Act current to 2026-10-29 (last amended 2026-09-01). Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_shareholder_cap_range
+    series: par_shareholder_cap_range
+    title: Most that a company with shareholders may transfer to them from a participating account, as a share of the profits set for distribution (OSFI Guideline E-16, section 2; Insurance Companies Act 461)
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "A transferable percentage (varying from 2.5% to 10%) is calculated based on the size of the sum of all the participating accounts, including any closed blocks resulting from demutualization;"
+    source_url: https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/participating-account-management-disclosure-participating-policyholders-adjustable-policyholders
+    source_quote: "A transferable percentage (varying from 2.5% to 10%) is calculated based on the size of the sum of all the participating accounts, including any closed blocks resulting from demutualization;"
+    authority: official_publication
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "OSFI Guideline E-16 (2023), section 2, summarizing ICA section 461. The next points read 'A portion of the profits of each non-closed block participating account is determined for that financial year by the Board as the portion to be distributed to the shareholders and policyholders;' and 'The transferable percentage from above is applied to this portion of the profits of each non-closed block participating account;'. Closed blocks from demutualization count in the size but pay nothing to shareholders. Section 461 opens 'A company that has share capital may', so a mutual company has no such transfer. The percentage is a ceiling, not what any company transfers. Page 'Date modified: 2023-01-18'. Used by the participating policy dividends tool. Mo to review before the site is advertised."
+  - id: par_shareholder_cap_tiers
+    series: par_shareholder_cap_tiers
+    title: Statutory tiers behind the shareholder transfer ceiling, percent applied to each slice of the sum of opening participating account balances, then divided by that sum (Insurance Companies Act 461(a))
+    kind: fixed
+    jurisdiction: federal
+    unit: percent
+    value:
+      - {from: "0", to: "250000000", rate: "10"}
+      - {from: "250000000", to: "500000000", rate: "7.5"}
+      - {from: "500000000", to: "1000000000", rate: "5"}
+      - {from: "1000000000", rate: "2.5"}
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-11.8/section-461.html
+    source_quote: "(iv) 2.5 multiplied by the amount, if any, by which the sum of the opening balances for that financial year of all participating accounts of the company exceeds one billion dollars,"
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "461(a): the amounts paid or transferred in the year may not exceed 'the percentage of the portion of the profits of the participating account that is determined by the directors as the portion to be distributed for that financial year to the shareholders and participating policyholders, which percentage shall not exceed the number, expressed as a percentage, that is the aggregate of' '(i) 10 multiplied by the lesser of (A) the sum of the opening balances for that financial year of all participating accounts of the company, and (B) two hundred and fifty million dollars,', '(ii) 7.5 multiplied by the amount, if any, by which the lesser of (A) [the same sum] and (B) five hundred million dollars exceeds two hundred and fifty million dollars,', '(iii) 5 multiplied by the amount, if any, by which the lesser of (A) [the same sum] and (B) one billion dollars exceeds five hundred million dollars, and', then the quoted line, 'divided by the sum of the opening balances for that financial year of all the participating accounts;'. It works like marginal brackets: the ceiling is the balance-weighted average of the rates, 10% up to $250 million in total opening balances and falling towards 2.5% for very large accounts. Rows give dollar slices of the sum of opening balances (from/to in CAD) and the rate in percent. 461(b) and (c) also require dividends to be paid under the dividend policy and the actuary's opinion that the transfer would not materially affect it. Act current to 2026-10-29 (last amended 2026-09-01). Mo to review before the site is advertised."
+  - id: par_policies_on_request
+    series: par_policies_on_request
+    title: A participating policyholder can get a life insurer's dividend policy and participating account management policy free on request (Insurance Companies Act 165(4.1))
+    kind: fixed
+    jurisdiction: federal
+    unit: text
+    value: "The company shall on request and free of charge send a copy of a policy established or amended under paragraph (2)(e) or (e.1) to a shareholder or participating policyholder and on payment of a reasonable fee to any other person."
+    source_url: https://laws-lois.justice.gc.ca/eng/acts/I-11.8/section-165.html
+    source_quote: "The company shall on request and free of charge send a copy of a policy established or amended under paragraph (2)(e) or (e.1) to a shareholder or participating policyholder and on payment of a reasonable fee to any other person."
+    authority: statute
+    as_of: 2026-11-17
+    status: confirmed
+    verified_by: "Claude, on Mo's standing OK of 2026-11-12"
+    verified_on: 2026-11-17
+    notes: "165(2)(e) is the board's policy for determining dividends and bonuses to participating policyholders; 165(2)(e.1) reads 'establish a policy respecting the management of each of the participating accounts maintained under section 456,'. Under 165(3.1) to (3.4) the actuary reports on the fairness of these policies and the directors consider those reports. OSFI Guideline E-16 section 4 also expects the policies or a summary to be available to policyholders. A neutral 'where to read more' pointer. Act current to 2026-10-29 (last amended 2026-09-01). Mo to review before the site is advertised."
